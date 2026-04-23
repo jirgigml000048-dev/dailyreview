@@ -80,7 +80,7 @@
     gap:1px; background:var(--line); margin:32px 0 8px;
     border:1px solid var(--line);
   }
-  .stat{background:var(--paper-soft); padding:16px 18px}
+  .stat{background:var(--paper-soft); padding:16px 18px; position:relative}
   .stat .label{
     font-size:11px; color:var(--ink-mute); letter-spacing:1.5px;
     text-transform:uppercase; margin-bottom:6px;
@@ -90,6 +90,10 @@
     font-variant-numeric:tabular-nums; letter-spacing:-0.3px;
   }
   .stat .delta{font-size:13px; margin-left:6px; font-weight:500}
+  .stat .asof{
+    position:absolute; bottom:4px; right:8px;
+    font-size:9.5px; color:var(--ink-mute); letter-spacing:0.3px;
+  }
   .up{color:var(--claude-deep)}
   .down{color:var(--accent-sage)}
 
@@ -345,7 +349,7 @@
 <!-- ============ MASTHEAD ============ -->
 <header class="masthead">
   <div class="masthead-top">
-    <span>Gigi's Daily · Vol.001</span>
+    <span>Gigi's Daily · Vol.002</span>
     <span>2026 · 04 · 23 <span class="dot"></span> 周四</span>
   </div>
   <h1 class="title">每日资讯 <span class="and serif">&amp;</span> 洞察</h1>
@@ -362,18 +366,22 @@
     <div class="stat">
       <div class="label">上证指数</div>
       <div class="value">4106.26 <span class="delta up">+0.52%</span></div>
+      <div class="asof">04-22 收</div>
     </div>
     <div class="stat">
       <div class="label">创业板指</div>
       <div class="value">3752.76 <span class="delta up">+1.73%</span></div>
+      <div class="asof">04-22 收</div>
     </div>
     <div class="stat">
       <div class="label">纳斯达克</div>
-      <div class="value">历史新高 <span class="delta up">+1.64%</span></div>
+      <div class="value">24657.57 <span class="delta up">+1.64%</span></div>
+      <div class="asof">04-22 收</div>
     </div>
     <div class="stat">
       <div class="label">Brent 原油</div>
       <div class="value">$101.91 <span class="delta up">+3.48%</span></div>
+      <div class="asof">04-22 收</div>
     </div>
   </div>
 </header>
@@ -401,15 +409,16 @@
 
   <div class="selfcheck">
     <h3>轻松健康集团（02661.HK）· 当日追踪</h3>
-    <div class="subtitle-line">仅展示 48 小时内的新动态——历史背景不再重复。今日采集样本 0 条新闻直接见报，近 72 小时共 3 条持续中。</div>
+    <div class="subtitle-line">仅展示近 72 小时内的新动态——历史背景不再重复。今日（04-23）未采集到新增针对性报道，舆情仍处于"回应后观察期"。</div>
 
     <div class="grid">
       <!-- 正面 -->
       <div class="pos">
         <div class="label">正面 · 近 72h 新动态</div>
         <ul>
-          <li><strong>04-23（今日）</strong>：暂无新增针对性报道，股价回到常规波动区间，Wind 数据显示资金净流入小幅回正。</li>
-          <li><strong>04-22</strong>：智通财经转引港交所公告，公司重申"<strong>不知悉股价异动原因、业务运营维持正常、主要股东与董事未出售股份</strong>"。<a href="https://cn.investing.com/news/stock-market-news/article-3320267">智通 · 投资快讯</a></li>
+          <li><strong>04-23（今日）</strong>：暂无新增针对性报道，港股盘中股价回到较为稳定的窄幅波动区间，未出现二次大幅异动。</li>
+          <li><strong>04-22</strong>：智通财经转引港交所公告，公司重申"<strong>不知悉股价异动原因、业务运营维持正常、主要股东与董事未出售股份</strong>"，信息口径稳定。<a href="https://cn.investing.com/news/stock-market-news/article-3320267">智通 · 投资快讯</a></li>
+          <li><strong>04-22</strong>：新浪 7×24 快讯追加通稿，公司强调"稳步推进<strong>健康 + 人工智能</strong>双引擎战略"，首次以新概念维度应对股价争议。<a href="https://wap.cj.sina.cn/pc/7x24/4829166">新浪财经 · 7×24</a></li>
         </ul>
       </div>
 
@@ -417,15 +426,15 @@
       <div class="neg">
         <div class="label">负面 · 近 72h 新动态</div>
         <ul>
-          <li><strong>04-23（今日）</strong>：暂无新增负面报道，但"轻松健康单日暴跌 59%"仍在微博热搜当日榜单中（排名第 3）。<a href="https://finance.sina.com.cn/wm/2026-04-21/doc-inhvfcpn6386048.shtml">新浪 · 暴跌回顾</a></li>
-          <li><strong>04-21</strong>：网易财经追踪，市场关注公司回应被认为"过于模板化"，未给出 CFO 继任时间表、亦未披露业务量化指标。<a href="https://m.163.com/dy/article/KR1E8PH005568V7Z.html">网易 · 异动回应</a></li>
-          <li><strong>04-20</strong>：单日收盘 <strong>-59%</strong>，市值从约 300 亿港元缩水至约 130 亿港元。<a href="https://finance.sina.com.cn/wm/2026-04-20/doc-inhvcrne6892239.shtml">新浪 · 一夜回到解放前</a></li>
+          <li><strong>04-23（今日）</strong>：暂无新增负面报道，但"轻松健康单日暴跌"相关词条仍在多家聚合站首屏排序，二次传播尚未完全散场。</li>
+          <li><strong>04-21</strong>：网易财经追踪，市场关注公司回应被认为"过于模板化"——未给出 CFO 继任时间表、亦未披露业务量化指标。<a href="https://m.163.com/dy/article/KR1E8PH005568V7Z.html">网易 · 异动回应</a></li>
+          <li><strong>04-20</strong>：单日收盘 <strong>-60.34%</strong>，收盘价 60.4 港元，市值由约 300 亿港元回落至 <strong>约 125 亿港元</strong>，位列当日港股跌幅榜首位。<a href="https://finance.sina.com.cn/wm/2026-04-21/doc-inhvfcpn6386048.shtml">新浪 · 暴跌复盘</a></li>
         </ul>
       </div>
     </div>
 
     <div class="takeaway">
-      <strong>PR 自查建议（当日版）：</strong>当前二次舆情的最大触点是"<strong>回应模板化</strong>"。今天没有新增公告是"观察窗口"，不是"利空出尽"。建议下一步披露三件事：(a) CFO 继任时间表，(b) "健康 + AI" 双引擎的可量化 KPI，(c) 基石与战略投资者的态度。
+      <strong>PR 自查建议（Day 3 版）：</strong>今日属"观察窗口 + 二次舆情消化期"，最大潜在风险是被媒体定性为"信息披露不充分"。建议在下一份正式披露中明确三件事：(a) <strong>CFO 继任时间表</strong>与过渡期治理安排；(b) "健康 + AI" 双引擎的<strong>可量化 KPI</strong>（证元芳智能体覆盖用户 / API 调用 / 合作医院数）；(c) 基石投资者与主要股东的公开态度。被动等二次舆情散场 = 被动让市场填空。
     </div>
   </div>
 </section>
@@ -438,37 +447,38 @@
   </div>
 
   <div class="deepdive">
-    <div class="kicker">头条 · 地缘 / 市场</div>
-    <h3><a href="https://finance.sina.com.cn/tech/roll/2026-04-23/doc-inhvmvzn5578222.shtml">特朗普宣布延长与伊朗停火协议，美股三大指数普涨，纳指创历史新高</a></h3>
-    <p>道指 +0.69%、标普 +1.05%、纳指 +1.64%。英伟达涨超 1%，谷歌/苹果/微软/亚马逊涨超 2%，台积电涨超 5%。中东紧张局势缓解叠加强劲企业财报，市场情绪全面修复。</p>
-    <p>值得留意的是 Brent 原油同步跳涨 <strong>+3.48%</strong> 至 101.91 美元 —— 表明油价更多反映"库存 + 需求"基本面而非战事溢价，对下一期美联储 4 月 28–29 日议息的通胀叙事构成微压。</p>
+    <div class="kicker">头条 · 美股业绩季</div>
+    <h3><a href="https://electrek.co/2026/04/22/tesla-tsla-q1-2026-financial-results/">特斯拉 Q1 营收 224 亿美元超预期，但 5 万辆库存积压与储能腰斩敲响警钟</a></h3>
+    <p>4 月 22 日盘后公布的 Q1 2026 财报显示：营收 <strong>224 亿美元</strong>（市场预期 214 亿），小幅超预期；生产 408,386 辆，交付 358,023 辆，<strong>库存净增超 5 万辆</strong>；储能装机环比下滑 <strong>38%</strong> 至 8.8 GWh，远低于 12–14 GWh 的分析师共识。</p>
+    <p>Robotaxi 业务按计划推进：4 月 18 日 Dallas 与 Houston 上线"无监管"无人驾驶服务，加上 2025 年 6 月上线的 Austin 共三城，但此前预告的"再扩 7 城"未兑现。对 PR 而言这是一个"量级合格、节奏掉速"的样本——<strong>超预期但不惊艳的财报反而比全面失手更考验叙事能力</strong>，特斯拉此次把镜头切到"能源业务毛利领先自动车"与"Megapack 3 量产在即"，是典型的"叙事换焦"示范。</p>
+    <div class="sources">
+      <strong>延伸阅读：</strong>
+      <a href="https://driveteslacanada.ca/news/tesla-q1-2026-earnings-beat-expectations-as-margins-cash-flow-rebound/">Drive Tesla · 利润率回升</a>
+      <a href="https://www.bloomberg.com/news/live-blog/2026-04-22/tesla-first-quarter-earnings">Bloomberg · 财报直播</a>
+    </div>
+  </div>
+
+  <div class="deepdive">
+    <div class="kicker">头条 · AI 格局</div>
+    <h3><a href="https://www.tmtpost.com/7952140.html">Anthropic ARR 冲 300 亿美元，企业新增 AI 预算 73% 流向 Claude</a></h3>
+    <p>截至 2026 年 4 月，Anthropic 的 ARR 从 2025 年底约 90 亿美元增至 <strong>300 亿美元</strong>，增幅超 3 倍；OpenAI 同期 ARR 为 240–250 亿美元。更具拐点意义的信号：3 月企业首次采购 AI 的<strong>新增资金</strong>中，73% 流向 Anthropic，OpenAI 份额降至 27%。</p>
+    <p>Claude Opus 4.7 在 SWE-bench Pro 拿下 <strong>64.3%</strong>，超过 GPT-5.4（57.7%）与 Gemini 3.1 Pro（54.2%）。对 PR 端最直接的影响——"选哪家 AI"正在从工程决策升级为品牌决策，类似 2015 年前后的"选哪家云"。企业发言人在财报电话会或产品 PR 中提及 AI 合作方时，应提前与采购、法务对齐 messaging。</p>
+    <div class="sources">
+      <strong>延伸阅读：</strong>
+      <a href="https://www.woshipm.com/ai/6376973.html">人人都是产品经理 · 格局对比</a>
+      <a href="https://www.bloomberg.com/news/articles/2026-04-22/google-releases-new-ai-agents-to-challenge-openai-and-anthropic">Bloomberg · Google 反击</a>
+    </div>
+  </div>
+
+  <div class="deepdive">
+    <div class="kicker">头条 · 政策动向</div>
+    <h3><a href="https://finance.sina.com.cn/stock/y/2026-04-23/doc-inhvmvzq3852914.shtml">两办意见落地：五大重点领域节能降碳，研究设立"国家低碳转型基金"</a></h3>
+    <p>中办国办《关于更高水平更高质量做好节能降碳工作的意见》4 月 22 日对外发布，4 月 23 日登上中国证券报头版。圈定<strong>五大重点领域</strong>：工业、建筑、交通、公共机构和数字基础设施——IDC、数据中心首次被纳入"工业级"节能降碳监管框架。</p>
+    <p>文件提出<strong>研究设立国家低碳转型基金</strong>，撬动社会资本参与低碳技术与产业升级。对 PR 而言，这是 2026 年继"新质生产力"之后第二个可以对齐的"国家级主叙事"，适用于能源、制造、数据中心、新能源车与绿色金融品牌。今日午盘光模块、光通信板块异动明确，叙事与资本定价已同步联动。</p>
     <div class="sources">
       <strong>延伸阅读：</strong>
       <a href="https://finance.sina.com.cn/headline/2026-04-23/doc-inhvmrtq5647254.shtml">新浪 · 隔夜要闻</a>
-      <a href="https://finance.yahoo.com/news/live/fed-meeting-live-updates-federal-reserve-holds-rates-steady-forecasts-1-rate-cut-in-2026-180216872.html">Yahoo · FOMC 实时</a>
-    </div>
-  </div>
-
-  <div class="deepdive">
-    <div class="kicker">头条 · AI 格局重构</div>
-    <h3><a href="https://www.tmtpost.com/7952140.html">Anthropic ARR 突破 300 亿美元，企业级 AI 新增预算 73% 流向 Anthropic</a></h3>
-    <p>截至 2026 年 4 月，Anthropic 的 ARR 从 2025 年底约 90 亿美元增长至 <strong>300 亿美元</strong>，增幅超 3 倍；OpenAI 同期 ARR 约 240–250 亿美元。更关键的拐点信号：3 月企业首次购买 AI 服务的<strong>新增资金</strong>中，73% 流向 Anthropic，OpenAI 份额降至 27%。</p>
-    <p>Claude Opus 4.7 在 SWE-bench Pro 拿下 64.3%，超过 GPT-5.4（57.7%）和 Gemini 3.1 Pro（54.2%），成为目前 GA 版本中能力最强的模型。对 PR 端最直接的影响是——品牌的"AI 合作方"标签正在成为类似"云厂商选择"的可识别信号。</p>
-    <div class="sources">
-      <strong>延伸阅读：</strong>
-      <a href="https://ofox.ai/zh/blog/claude-opus-4-7-release-ofox-support-2026/">Claude Opus 4.7 发布全文</a>
-      <a href="https://www.woshipm.com/ai/6376973.html">人人都是产品经理 · 格局对比</a>
-    </div>
-  </div>
-
-  <div class="deepdive">
-    <div class="kicker">头条 · 国内货币政策</div>
-    <h3><a href="https://www.news.cn/money/20260421/7af4278f0f6949219b12e974bf3ea635/c.html">4 月 LPR 维持不变：1 年期 3.0%、5 年期以上 3.5%，货币政策进入"观察期"</a></h3>
-    <p>人民银行 4 月 20 日公布 LPR。表面平静，内在信号强烈：一季度 GDP 增速 <strong>5.0%</strong>、出口大幅超预期、投资止跌回升、消费改善，使稳增长需求阶段性降温，央行"子弹"得以保留。</p>
-    <p>2026 年货币政策定调"<strong>适度宽松</strong>"，降准降息工具保留弹性；结构性工具将聚焦"<strong>扩大内需、科技创新、中小微企业</strong>"。这个三角组合是 2026 年 PR 叙事最值得对齐的三大政策标签。</p>
-    <div class="sources">
-      <strong>延伸阅读：</strong>
-      <a href="https://finance.sina.com.cn/wm/2026-04-01/doc-inhsxvfk1975649.shtml">银河证券 · 一季度货币政策解读</a>
+      <a href="https://wallstreetcn.com/articles/3770650">华尔街见闻 · 早餐 FM</a>
     </div>
   </div>
 </section>
@@ -484,57 +494,57 @@
     <li class="news-item">
       <div class="num">01</div>
       <div>
-        <div class="news-title"><span class="tag tag-market">A股</span><a href="http://mp.cnfol.com/54467/article/1776900735-142377674.html">A 股震荡分化，主线聚焦业绩与政策</a></div>
-        <div class="news-body">上证 +0.52%、深成 +1.30%、创业板 +1.73%，两市成交约 2.58 万亿。市场主线从"主题炒作"切换到"业绩 + 政策"双驱动。<a class="inline-src" href="https://stock.eastmoney.com/">东方财富</a></div>
+        <div class="news-title"><span class="tag tag-market">A股</span><a href="https://finance.sina.com.cn/headline/2026-04-23/doc-inhvmvzn5545719.shtml">A 股三大指数普涨，CPO 与半导体领涨，创业板近 11 年新高</a></div>
+        <div class="news-body">上证 +0.52% 报 4106.26、深成 +1.30% 报 15177.29、创业板 +1.73% 报 3752.76、北证 50 +1.59% 报 1421.21。两市成交 <strong>2.58 万亿</strong>，较上日放量 1522 亿。CPO、石墨电极、半导体涨幅居前；影视院线跌幅居前。<a class="inline-src" href="https://caifuhao.eastmoney.com/news/20260421155813694591300">东方财富</a></div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">02</div>
       <div>
-        <div class="news-title"><span class="tag tag-policy">政策</span><a href="https://www.ndrc.gov.cn/">两办发布节能降碳新指引，工业重点领域差别电价研究推进</a></div>
-        <div class="news-body"><strong>新政策解读：</strong>《关于更高水平更高质量做好节能降碳工作的意见》落地。核心是把"差别化电价"从原则性提法变为可操作的工业政策工具——综合考虑能耗强度 + 环保绩效两个维度后，高耗能行业（钢铁、电解铝、水泥、化工）将面临更精细的成本分层。对二级市场而言是"优质产能溢价、落后产能折价"的重估动能。<a class="inline-src" href="https://finance.sina.com.cn/headline/2026-04-23/doc-inhvmvzn5545719.shtml">新浪</a></div>
+        <div class="news-title"><span class="tag tag-policy">政策</span><a href="https://m.cnfin.com/yw-lb//zixun/20260423/4403422_1.html">北京金融工作座谈会：科创板、创业板改革"在京落地见效"</a></div>
+        <div class="news-body">4 月 21 日，北京市委书记尹力主持金融工作座谈会，金融监管总局局长李云泽、证监会主席吴清出席。<strong>政策信号展开：</strong>"落地见效"是 2026 年监管新口径，意味着将从"规则发布"切换到"实施考核"。对北京金融街、中关村两类客户的 IR/PR 叙事有直接影响——下半年话术将从"改革预期"过渡到"改革兑现"。<a class="inline-src" href="https://www.stcn.com/">证券时报</a></div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">03</div>
       <div>
-        <div class="news-title"><span class="tag tag-market">美股</span><a href="https://finance.sina.com.cn/tech/roll/2026-04-23/doc-inhvmvzn5578222.shtml">特斯拉 Q1 营收两位数增长，创近三年最强增速</a></div>
-        <div class="news-body">2026 Q1 营收同比两位数大增，电动车需求 + 能源业务共振。同日消息：特斯拉中国车机拟接入豆包大模型，已完成备案。</div>
+        <div class="news-title"><span class="tag tag-market">光模块</span><a href="https://finance.sina.com.cn/roll/2026-04-23/doc-inhvmvzq3852686.shtml">中际旭创：客户已给到 2026–2027 年需求指引，800G 与 1.6T 持续放量</a></div>
+        <div class="news-body">光模块龙头释放两年期可见度，AI 算力支出从"投资周期"走向"结构性需求"。光通信板块成为当日 A 股最大主线，叠加两办节能降碳文件把数据中心纳入新五大领域，板块逻辑由"情绪"转"基本面"。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">04</div>
       <div>
-        <div class="news-title"><span class="tag tag-market">供应链</span><a href="https://finance.sina.com.cn/headline/2026-04-23/doc-inhvmvzn5545719.shtml">消费级 CPU 涨价 5–10%、服务器 CPU 涨 10–20%</a></div>
-        <div class="news-body">3 月起供应链"严重供不应求"，AI 算力 + PC 换机周期叠加，芯片涨价传导至整机与云服务报价。这是 2026 年少见的"需求端价格信号反超产能扩张"的硬指标。</div>
+        <div class="news-title"><span class="tag tag-market">美股</span><a href="https://www.cnbc.com/2026/04/21/stock-market-today-live-updates.html">S&amp;P 500、纳指齐创历史收盘新高，伊朗停火延长叠加强财报推涨</a></div>
+        <div class="news-body">4 月 22 日收盘：道指 +0.69% 报 49490.03、S&amp;P +1.05% 报 7137.90、纳指 +1.64% 报 24657.57。中东停火延长 + Q1 财报季开门红共同驱动，但 23 日亚洲盘美股期指小幅回落，显示高位整固压力。<a class="inline-src" href="https://finance.yahoo.com/markets/stocks/live/stock-market-today-wednesday-april-22-dow-sp-500-nasdaq-trump-us-iran-ceasefire-230429476.html">Yahoo Finance</a></div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">05</div>
       <div>
-        <div class="news-title"><span class="tag tag-policy">货币政策</span><a href="https://www.jpmorgan.com/insights/global-research/economy/fed-rate-cuts">美联储料 4 月 28–29 日按兵不动，2026 年预计仅降息 1 次</a></div>
-        <div class="news-body">联邦基金利率目标区间维持 3.50–3.75%。摩根大通预计全年按兵不动、2027 Q3 加息 25bp。中东局势是最大变量。<a class="inline-src" href="https://www.federalreserve.gov/monetarypolicy/fomcminutes20260318.htm">FOMC 纪要</a></div>
+        <div class="news-title"><span class="tag tag-market">业绩季</span><a href="https://finance.yahoo.com/markets/stocks/article/tesla-q1-earnings-preview-robotaxi-rollout-mega-capex-spending-in-focus-135049863.html">4 月 23 日美股业绩密集档：Intel、Blackstone、Thermo Fisher、Honeywell</a></div>
+        <div class="news-body">今日盘前盘后披露 Q1 财报的公司包括：美国运通、霍尼韦尔、联合太平洋、洛克希德马丁、黑石、康卡斯特、英特尔、吉利德、Freeport-McMoRan、Newmont、NextEra、Thermo Fisher。半导体（Intel）与基建（Honeywell/Union Pacific）是两大叙事焦点。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">06</div>
       <div>
-        <div class="news-title"><span class="tag tag-market">并购</span><a href="https://finance.sina.com.cn/jjxw/2026-04-22/doc-inhvkixy5543614.shtml">柳钢股份筹划收购广西钢铁股权，A 股 4 月 23 日起停牌</a></div>
-        <div class="news-body">预计停牌不超过 10 个交易日。区域钢铁整合加速，与节能降碳差别电价政策形成共振。</div>
+        <div class="news-title"><span class="tag tag-market">港股</span><a href="https://cn.investing.com/news/stock-market-news/article-3320267">港股异动：Tesla 中国车机拟接入豆包大模型，自主驾驶题材同步走高</a></div>
+        <div class="news-body">特斯拉中国备案完成，车机层面将接入字节豆包大模型。A/港股自动驾驶、端侧大模型板块同步联动，与 Tesla Q1 财报共振。字节对外 AI 品牌由此从"C 端娱乐"切入"B 端汽车"。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">07</div>
       <div>
-        <div class="news-title"><span class="tag tag-market">能源</span>国际油价单日跳涨 3.5%，WTI 报 95.15 美元</div>
-        <div class="news-body">WTI 6 月合约 +3.58% 报 $95.15，Brent +3.48% 报 $101.91。短期震荡格局，中长期看中东停火持续性。</div>
+        <div class="news-title"><span class="tag tag-market">能源</span><a href="https://finance.sina.com.cn/headline/2026-04-23/doc-inhvmrtq5647254.shtml">国际油价跳涨 3.5%，Brent 报 $101.91、WTI 报 $95.15</a></div>
+        <div class="news-body">跳涨未与中东紧张度成比例——停火延长背景下仍然走高，说明价格更多反映"库存 + 需求基本面"。霍尔木兹海峡扫雷美媒称需 6 个月，远期供给端仍有不确定性。<a class="inline-src" href="https://sputniknews.cn/20260423/1070917698.html">卫星 · 霍尔木兹</a></div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">08</div>
       <div>
-        <div class="news-title"><span class="tag tag-market">消费</span><a href="https://www.cfsn.cn/news/detail/22/345589.html">一季度全国餐饮收入 1.46 万亿，同比 +4.2%</a></div>
-        <div class="news-body"><strong>新概念展开：</strong>京东 4 月 16 日在北京举办"品质餐饮大会"，正式启动"<strong>双百翻倍计划</strong>"——目标是帮 100 个品牌双店型翻倍、100 个品类双渠道翻倍；同步发布"<strong>AI 餐饮经营四件套</strong>"（覆盖选品、定价、选址、营销四个决策节点）。这是继美团"神会员"之后，巨头把"AI Agent 经营工具包"作为餐饮品牌抢占窗口的新一轮叙事，值得餐饮类客户同步复用。</div>
+        <div class="news-title"><span class="tag tag-market">并购</span><a href="https://finance.sina.com.cn/jjxw/2026-04-22/doc-inhvkixy5543614.shtml">柳钢股份停牌筹划收购广西钢铁股权，区域钢铁整合加速</a></div>
+        <div class="news-body">A 股 4 月 23 日起停牌不超 10 个交易日。节能降碳差别电价叠加地方产能整合，钢铁行业进入"优质产能吸收落后产能"的新阶段。对钢铁 / 水泥 / 电解铝客户，<strong>"差别电价 + 碳成本"组合是接下来 2 个季度的核心 PR 叙事骨架</strong>。</div>
       </div>
     </li>
   </ol>
@@ -544,71 +554,64 @@
 <section id="ai">
   <div class="section-head">
     <h2><span class="cn">AI / 科技</span><span class="en">/ AI &amp; Tech</span></h2>
-    <div class="section-meta">9 条 · 今日</div>
+    <div class="section-meta">8 条 · 今日</div>
   </div>
 
   <ol class="news-list">
     <li class="news-item">
       <div class="num">01</div>
       <div>
-        <div class="news-title"><span class="tag tag-ai">模型</span><a href="https://ofox.ai/zh/blog/claude-opus-4-7-release-ofox-support-2026/">Claude Opus 4.7 发布：编码能力 +13%，视觉分辨率提升 3 倍</a></div>
-        <div class="news-body">SWE-bench Pro 64.3%、CursorBench 70%。同等质量下比 4.6 少用 14% token，工具调用错误减少 1/3。GA 版本中能力最强，目前超过 GPT-5.4（57.7%）和 Gemini 3.1 Pro（54.2%）。</div>
+        <div class="news-title"><span class="tag tag-ai">模型</span><a href="https://findskill.ai/blog/gpt-6-release-date/">GPT-6（代号 "Spud"）4 月 14 日预定发布落空，市场押注概率从 93% 降至 45%</a></div>
+        <div class="news-body"><strong>关键进展：</strong>预训练于 3 月 24 日在德州 Stargate 数据中心完成，Altman 当时称"几周内"上线。但 4 月 14 日的社区押注日期已过，模型仍在安全评估与红队阶段。Polymarket "GPT-6 by June 30" 合约概率从一周前的 93% 降至今天的 45%。如果最终作为"GPT-5.5"发布，意味着性能跃升未达 OpenAI 自身"代际"门槛——对 Anthropic 而言是企业 B 端再延一个窗口期。<a class="inline-src" href="https://lifearchitect.ai/gpt-6/">Alan Thompson</a></div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">02</div>
       <div>
-        <div class="news-title"><span class="tag tag-ai">模型</span><a href="https://www.huxiu.com/article/4848350.html">GPT-6（代号 "Spud"）预训练完成，预计 4 月正式发布</a></div>
-        <div class="news-body">预训练于 3 月 24 日在德州 Stargate 数据中心完成，编码/推理较 GPT-5.4 +40%，上下文翻倍至 <strong>200 万 token</strong>。OpenAI 希望借此版本夺回企业端失地。</div>
+        <div class="news-title"><span class="tag tag-ai">Agent</span><a href="https://www.bloomberg.com/news/articles/2026-04-22/google-releases-new-ai-agents-to-challenge-openai-and-anthropic">Google 发布企业级 AI Agent 工具，直接对标 Claude for Work 与 ChatGPT Enterprise</a></div>
+        <div class="news-body">Bloomberg 独家。帮助企业自动化业务流程，产品线覆盖客服、财务、数据分析三类。Google 选择在 Anthropic ARR 冲刺 300 亿美元的节点公布，时点用意明显。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">03</div>
       <div>
-        <div class="news-title"><span class="tag tag-ai">商业</span><a href="https://www.tmtpost.com/7952140.html">三大实验室竞速：Anthropic 73% 新预算份额、OpenAI 27%</a></div>
-        <div class="news-body">2026 年 3 月企业首次采购 AI 新增资金流向显示格局反转。Anthropic ARR 300 亿美元、OpenAI 240–250 亿美元。"企业默认选 Claude"正在成为新共识。</div>
+        <div class="news-title"><span class="tag tag-ai">模型</span><a href="https://zhuanlan.zhihu.com/p/670574382">多家实验室 4 月更新：GPT-5.1-Thinking、Claude Haiku 4.5、Veo 3.1</a></div>
+        <div class="news-body">OpenAI 在 GPT-5.1 基础上上线推理版 GPT-5.1-Thinking；Anthropic 发布 Claude Haiku 4.5 通用模型；Google DeepMind 更新视频模型 Veo 3.1。三家同期更新"中间层"产品，折射出在 GPT-6 / Opus 5 发布前的"占位换代"节奏。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">04</div>
       <div>
-        <div class="news-title"><span class="tag tag-ai">Agent</span><a href="https://www.bloomberg.com/news/articles/2026-04-22/google-releases-new-ai-agents-to-challenge-openai-and-anthropic">Google 发布多款企业级 AI Agent 工具挑战 OpenAI 与 Anthropic</a></div>
-        <div class="news-body">帮助企业自动化业务流程，瞄准 Claude for Work 与 ChatGPT Enterprise 的基本盘。Bloomberg 独家披露。</div>
+        <div class="news-title"><span class="tag tag-ai">治理</span><a href="https://www.thepaper.cn/newsDetail_forward_32958964">OpenAI、Anthropic、Google 结盟反击"对抗性模型蒸馏"</a></div>
+        <div class="news-body"><strong>新概念展开：</strong>4 月 6 日起三家共享用于识别"对抗性蒸馏"（adversarial distillation）行为的信号，主要瞄准亚洲地区大规模自动化模型复制行为。这是 AI 行业首次形成"<strong>模型治理反蒸馏联盟</strong>"——对品牌 PR 的直接含义：使用开源模型或以"蒸馏"为公开卖点的产品 messaging 需要重新审视，避免被归入"被针对"名单。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">05</div>
       <div>
         <div class="news-title"><span class="tag tag-ai">基础设施</span><a href="https://techcrunch.com/2026/04/22/exclusive-google-deepens-thinking-machines-lab-ties-with-new-multi-billion-dollar-deal/">Thinking Machines Lab 与 Google Cloud 签数十亿美元协议</a></div>
-        <div class="news-body">由 Nvidia 最新 GB300 芯片承载。Mira Murati 的新实验室正式进入"大算力玩家"行列。TechCrunch 独家。</div>
+        <div class="news-body">TechCrunch 独家。Mira Murati 的新实验室由 Nvidia GB300 芯片承载，正式进入"大算力玩家"。Google Cloud 在 TPU 之外重押 Nvidia 生态，说明"多芯片组合"策略已成头部云厂商标配。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">06</div>
       <div>
-        <div class="news-title"><span class="tag tag-ai">医药</span><a href="https://www.merck.com/news/merck-and-google-cloud-partner-to-accelerate-agentic-ai-enterprise-transformation/">默克与 Google Cloud 达成 10 亿美元战略合作</a></div>
-        <div class="news-body">跨研发、生产、商业、公司职能部署 Agentic 平台。制药是 Agent 应用最容易被量化 ROI 的场景之一。</div>
+        <div class="news-title"><span class="tag tag-ai">医药</span><a href="https://www.merck.com/news/merck-and-google-cloud-partner-to-accelerate-agentic-ai-enterprise-transformation/">默克与 Google Cloud 签 10 亿美元战略协议，部署 Agentic 平台</a></div>
+        <div class="news-body">跨研发、生产、商业、公司职能四大板块部署。制药是 Agent 应用中 ROI 最容易被量化的场景——"加速临床试验周期""降低研发失败率"两个指标已进入财报分析师问答列表。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">07</div>
       <div>
-        <div class="news-title"><span class="tag tag-ai">效率</span><a href="https://kersai.com/ai-breakthroughs-april-2026-models-funding-shifts/">Google Gemini 3.1 Flash-Lite 发布：速度 2.5 倍、输出提速 45%</a></div>
-        <div class="news-body">输入价 $0.25/百万 token，主打大规模部署。TurboQuant 算法在 ICLR 2026 亮相，解决向量量化内存开销问题。</div>
+        <div class="news-title"><span class="tag tag-ai">机器人</span><a href="https://m.cnfin.com/yw-lb//zixun/20260423/4403422_1.html">北京亦庄人形机器人半程马拉松：自主导航技术规模化应用</a></div>
+        <div class="news-body">人形机器人赛道在本周完成从"PR demo"到"户外规模化"的跃升。证券时报定调"2026 年有望成为行业量产元年"——这是机构投资者愿意公开背书的第一份"量产时间点"研判。机器人品牌的 PR 节奏需要从"技术炫技"切换为"良品率 + 交付周期"。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">08</div>
       <div>
-        <div class="news-title"><span class="tag tag-ai">融资</span><a href="https://kersai.com/ai-breakthroughs-april-2026-models-funding-shifts/">Q1 2026 全球创投总额 2970 亿美元创历史新高，AI 拿走 81%</a></div>
-        <div class="news-body">AI 初创公司吸金 2420 亿美元。<strong>历史规模前 5 大轮次中有 4 笔发生在本季度</strong>。资本高度集中意味着叙事门槛同步抬升——创业公司 PR 需要比以往更明确的"差异化定义"。</div>
-      </div>
-    </li>
-    <li class="news-item">
-      <div class="num">09</div>
-      <div>
-        <div class="news-title"><span class="tag tag-ai">产业</span><a href="https://kersai.com/ai-breakthroughs-april-2026-models-funding-shifts/">SpaceX 完成 2500 亿美元收购 xAI，合并估值 1.25 万亿美元</a></div>
-        <div class="news-body"><strong>新概念展开：</strong>形成"卫星 + 算力 + 模型"<strong>垂直一体化 AI 帝国</strong>——Starlink 数据、xAI 模型、Tesla 端侧进入闭环。这是 AI 竞赛进入"基础设施 + 数据 + 模型"三位一体的标志性事件，直接对标 Google（搜索+云+Gemini）与 Microsoft（Azure+GitHub+OpenAI）的组合。</div>
+        <div class="news-title"><span class="tag tag-ai">产业</span><a href="https://www.tmtpost.com/7952122.html">斯坦福 2026 AI 指数：美国 AI 投资规模是中国 23 倍，但模型能力"基本没差距"</a></div>
+        <div class="news-body">斯坦福 AI Index 2026 关键数据两组：美国 AI 投资规模是中国 23 倍，模型能力差距已基本抹平。这是"<strong>投资密度 vs. 能力收敛</strong>"的典型不匹配——对中国 AI 品牌 PR 而言，叙事由"追赶"转向"效率更高"是可以公开使用的新框架。</div>
       </div>
     </li>
   </ol>
@@ -625,56 +628,56 @@
     <li class="news-item">
       <div class="num">01</div>
       <div>
-        <div class="news-title"><a href="https://finance.sina.com.cn/headline/2026-04-23/doc-inhvmrtq5647254.shtml">第 139 届广交会正式开幕，参展企业超 3.2 万家</a></div>
-        <div class="news-body">新增 9 个展品专区：智能穿戴、显示技术、消费级无人机、集成房屋、庭院设施等。外贸新订单是本轮 A 股反弹的关键基本面支撑。</div>
+        <div class="news-title"><a href="https://news.gmw.cn/2026-04/16/content_38710794.htm">第 139 届广交会持续进行中，9 个新设专区反映"十五五"开局</a></div>
+        <div class="news-body">4 月 15 日–5 月 5 日。本届展区 179 个，9 个新专区包括智能穿戴、显示技术、消费级无人机、农业无人机、功能性纺织、竹制餐具、时尚配件、集成房屋与庭院设施。外贸新订单是本轮 A 股反弹的关键基本面支撑。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">02</div>
       <div>
-        <div class="news-title"><a href="https://sputniknews.cn/20260423/1070916395.html">俄美乌克兰磋商持续，克宫欢迎威特科夫与库什纳继续访俄</a></div>
-        <div class="news-body">佩斯科夫表态后，市场对地缘溢价的敏感度继续下降，油价跳涨更多反映基本面而非战事。</div>
+        <div class="news-title"><a href="https://sputniknews.cn/20260423/1070916395.html">俄美继续就乌克兰议题磋商，克宫欢迎威特科夫与库什纳再访俄</a></div>
+        <div class="news-body">佩斯科夫表态后，市场对"战事溢价"的敏感度继续下降。本周三个地缘缓和信号（伊朗停火延长、俄美继续会谈、美财长谈豁免延长）共同压低风险溢价。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">03</div>
       <div>
-        <div class="news-title"><a href="https://finance.sina.com.cn/headline/2026-04-23/doc-inhvmrtq5647254.shtml">保定通报"红色地下水"：初判与染料有关，污染企业负责人被采取强制措施</a></div>
-        <div class="news-body"><strong>危机公关样本：</strong>环境事件"排查 → 通报 → 追责"链条被压缩到 48 小时。地方政府声明中采用的"<strong>初判 + 强制措施</strong>"双动词组合值得记入应急模板——既避免定性过早的法律风险，又给公众明确信号。</div>
+        <div class="news-title"><a href="https://finance.sina.com.cn/headline/2026-04-23/doc-inhvmrtq5647254.shtml">保定通报"红色地下水"：初判与染料有关，污染企业负责人被强制措施</a></div>
+        <div class="news-body"><strong>危机公关样本：</strong>环境事件"排查 → 通报 → 追责"链条压缩到 48 小时。官方采用"<strong>初判 + 强制措施</strong>"双动词组合值得记入应急模板——既避免定性过早的法律风险，又给公众明确信号，是 2026 年第二个值得记入"政府侧快速响应"案例（第一个是南通江边燃烧事件）。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">04</div>
       <div>
-        <div class="news-title"><a href="https://finance.sina.com.cn/headline/2026-04-23/doc-inhvmrtq5647254.shtml">航旅纵横 APP 崩停 19 小时后恢复，后续订单逐一跟进</a></div>
-        <div class="news-body">SaaS/票务类应用一旦停摆即演化为全民舆情。公司采用"<strong>持续推送 + 个案跟进</strong>"而非一次性声明，有效分散了舆情峰值。建议记入客户 SaaS 应急预案。</div>
+        <div class="news-title"><a href="https://finance.sina.com.cn/headline/2026-04-23/doc-inhvmrtq5647254.shtml">航旅纵横 APP 崩停 19 小时后恢复，采用"持续推送 + 个案跟进"策略</a></div>
+        <div class="news-body">SaaS/票务类应用一旦停摆即演化为全民舆情。公司选择"<strong>持续推送 + 个案跟进</strong>"而非"一次性声明"，有效分散了舆情峰值。建议记入客户 SaaS 应急预案——与 2024 年航司 Delta CrowdStrike 事件并列为"长时段恢复"样本。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">05</div>
       <div>
-        <div class="news-title"><a href="https://finance.sina.com.cn/headline/2026-04-23/doc-inhvmrtq5647254.shtml">广州一年级、七年级将"随机编班"，由区教育局统一组织</a></div>
-        <div class="news-body">教育公平议题持续发酵，家长群体二次传播强度高。教育类品牌慎用"精英班""名师班"话术。</div>
+        <div class="news-title"><a href="https://finance.sina.com.cn/headline/2026-04-23/doc-inhvmrtq5647254.shtml">广州一年级、七年级"随机编班"，由区教育局统一组织</a></div>
+        <div class="news-body">教育公平议题持续发酵，家长社区二次传播强度高。教育、早教、K12 培训类品牌需立即排查话术库——"精英班""名师班""定向培优"均为当下敏感词。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">06</div>
       <div>
-        <div class="news-title"><a href="https://finance.sina.com.cn/headline/2026-04-23/doc-inhvmrtq5647254.shtml">云南幼童气管取出 8cm 活蚂蟥，公共卫生科普刷屏</a></div>
-        <div class="news-body">医疗 + 猎奇话题天然自带传播属性，健康类品牌可跟进科普内容（注意不蹭热点至伦理边缘）。</div>
+        <div class="news-title"><a href="https://finance.sina.com.cn/headline/2026-04-23/doc-inhvmrtq5647254.shtml">云南幼童气管内取出 8cm 活体蚂蟥，全网科普刷屏</a></div>
+        <div class="news-body">医疗 + 猎奇话题天然自带传播属性。健康类品牌可跟进"户外生水安全"科普，但需注意不蹭热点至伦理边缘——避免利用幼童身份做强情绪化 hook。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">07</div>
       <div>
-        <div class="news-title"><a href="https://www.thepaper.cn/">法国议会 170 比 0 通过文物归还法案</a></div>
-        <div class="news-body">微博国际板块热点。全球"文化资产返还"潮可能为文博 IP 带来新一轮曝光窗口。</div>
+        <div class="news-title"><a href="https://sputniknews.cn/20260423/1070914997.html">法国议会 170 比 0 通过文物归还法案，全球"文化资产返还"潮继续</a></div>
+        <div class="news-body">微博国际板块热点。全球"文化资产返还"潮为文博 IP 带来新一轮曝光窗口——博物馆、文创、出版、纪录片四类客户可以在此窗口里推"馆藏叙事"新项目。</div>
       </div>
     </li>
   </ol>
 </section>
 
-<!-- ============ WEIBO TOP 10 (pending) ============ -->
+<!-- ============ WEIBO TOP 10 (pending data source) ============ -->
 <section id="weibo">
   <div class="section-head">
     <h2><span class="cn">微博热搜</span><span class="en">/ Weibo Top 10</span></h2>
@@ -683,9 +686,9 @@
 
   <div class="weibo" style="background:#fbf6ea;border:1px dashed var(--claude);">
     <p class="note" style="color:var(--claude-deep);font-style:normal;font-size:14px;line-height:1.8">
-      <strong>⚠ 本模块暂缺真实数据。</strong><br>
-      沙盒环境无法直连微博实时热搜（<code style="background:#fff;padding:1px 6px;border-radius:2px">s.weibo.com/top/summary</code> 需登录 Cookie、第三方 API 需 key、镜像站被代理拦截）。上一版列出的 10 条是"新闻事件"而非真实"热搜词"，已移除以免误导。<br><br>
-      待你选定数据接入方案后，此模块会在定时任务里自动填充真实 TOP10（含热度值、分类标签、涨跌位次）。可跳转<a href="https://s.weibo.com/top/summary" style="color:var(--claude-deep);text-decoration:none;border-bottom:1px dotted var(--claude)">新浪官方热搜榜</a>临时查阅。
+      <strong>⚠ 本模块暂缺真实热搜词数据。</strong><br>
+      沙盒环境无法直连微博实时热搜（<code style="background:#fff;padding:1px 6px;border-radius:2px">s.weibo.com/top/summary</code> 需登录 Cookie、第三方聚合 API 需 key、镜像站被代理拦截）。为避免把"新闻事件"误报为"真实热搜词"，本期仍保留占位。<br><br>
+      今日周边可见话题（非官方榜单、仅作 <em>sanity check</em>）：广交会开幕、法国文物归还法案、保定红色地下水、航旅纵横崩停。完整 TOP10 请临时查阅<a href="https://s.weibo.com/top/summary" style="color:var(--claude-deep);text-decoration:none;border-bottom:1px dotted var(--claude)">新浪官方热搜榜</a>或<a href="https://www.weibotop.cn/2.0/" style="color:var(--claude-deep);text-decoration:none;border-bottom:1px dotted var(--claude)">热搜时光机</a>。
     </p>
   </div>
 </section>
@@ -701,18 +704,18 @@
     <div class="label">Three Insights for Today</div>
     <h3>三条可直接写入本周 PR 简报的洞察</h3>
     <ol>
-      <li><strong>AI 叙事权转移：</strong>Anthropic 拿下 73% 新增企业预算，"用哪家 AI"正在成为 B 端品牌的 PR 标签，建议 tech partner 披露策略提前同步。</li>
-      <li><strong>"行为-价值观一致性"成舆情主轴：</strong>2026 年舆情监测显示 <strong>83%</strong> 负面舆情源于"说一套做一套"。对外声明之前先做内部自证链路。</li>
-      <li><strong>危机响应 48 小时窗口已成新基准：</strong>保定"红色地下水"、航旅纵横与轻松健康三个样本都显示——超过一天未表态 = 二次舆情。<strong>模板化回应 = 第三次舆情。</strong></li>
+      <li><strong>"超预期 ≠ 惊艳"的叙事管理：</strong>特斯拉 Q1 营收超预期仍被市场关注"库存积压 + 储能腰斩"。当数据只是微超时，"<strong>叙事换焦</strong>"（把镜头切向 Robotaxi、Megapack 3、毛利）比单纯晒数字更有效。这是所有 B 端上市公司下一次财报季的通用脚本。</li>
+      <li><strong>"选哪家 AI"从工程决策升级为品牌决策：</strong>Anthropic 拿走 73% 企业新增预算，意味着"<strong>AI 合作方</strong>"正在成为类似云厂商的可识别品牌信号。企业发言人在财报、官网、招股书中提及 AI 合作方前，应与采购、法务、IR 提前对齐 messaging，避免后期改口。</li>
+      <li><strong>危机响应已从"48 小时规则"进化为"回应质量 &gt; 回应速度"：</strong>保定、航旅纵横、轻松健康三个样本共同指向——超过一天未表态 = 二次舆情；<strong>模板化回应 = 第三次舆情</strong>。2026 的危机模板应当默认包含"量化指标 + 时间表"两个必填字段，而不是"业务运营正常"这类非信息性语句。</li>
     </ol>
   </div>
 </section>
 
 <!-- ============ FOOTER ============ -->
 <footer>
-  <div class="brand">Gigi's Daily Digest · Generated 2026-04-23</div>
-  <div>共 34 条资讯 · 公司自查 1 家 · 来源 20+</div>
-  <div class="disclaimer">本简报为多源公开信息整合，不构成投资建议。</div>
+  <div class="brand">Gigi's Daily Digest · Generated 2026-04-23 · Vol.002</div>
+  <div>共 29 条资讯 · 公司自查 1 家（HK2661 · 观察期 Day 3）· 来源 20+</div>
+  <div class="disclaimer">本简报为多源公开信息整合，不构成投资建议。所有指数与股价数据截至 2026-04-22 收盘或 2026-04-23 盘中搜集时点。</div>
 </footer>
 
 </div>
