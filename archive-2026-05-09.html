@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>每日资讯日报 · 2026年5月9日</title>
+<title>每日资讯日报 · 2026年5月9日 · 周末复盘</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -38,6 +38,7 @@
   .serif{font-family:"Source Serif 4","Noto Serif SC",Georgia,serif; font-optical-sizing:auto}
   .container{max-width:820px; margin:0 auto; padding:56px 32px 80px}
 
+  /* ============ Masthead ============ */
   .masthead{
     border-bottom:1px solid var(--ink);
     padding-bottom:28px; margin-bottom:44px;
@@ -73,6 +74,7 @@
   }
   .byline .sep{color:var(--line)}
 
+  /* ============ Hero stats ============ */
   .hero-stats{
     display:grid; grid-template-columns:repeat(3,1fr);
     gap:1px; background:var(--line); margin:32px 0 8px;
@@ -95,6 +97,7 @@
   .up{color:var(--claude-deep)}
   .down{color:var(--accent-sage)}
 
+  /* ============ TOC ============ */
   .toc{
     background:var(--card); border:1px solid var(--line); border-radius:2px;
     padding:18px 22px; margin:24px 0 40px; box-shadow:var(--shadow);
@@ -114,6 +117,7 @@
   .toc-list a:hover{border-bottom-color:var(--claude)}
   .toc-list .num{color:var(--claude); margin-right:6px; font-variant-numeric:tabular-nums}
 
+  /* ============ Sections ============ */
   section{margin-bottom:56px; scroll-margin-top:20px}
   .section-head{
     display:flex; align-items:flex-end; justify-content:space-between;
@@ -135,6 +139,7 @@
     text-transform:uppercase; padding-bottom:8px;
   }
 
+  /* ============ Deep-dive block ============ */
   .deepdive{
     background:var(--card); border-left:3px solid var(--claude);
     padding:22px 26px; margin-bottom:24px; box-shadow:var(--shadow);
@@ -162,6 +167,7 @@
     margin-right:14px; border-bottom:1px dotted var(--claude);
   }
 
+  /* ============ News list ============ */
   .news-list{list-style:none}
   .news-item{
     padding:18px 0;
@@ -200,6 +206,7 @@
   .tag-ai{color:var(--accent-gold)}
   .tag-brand{color:var(--accent-rose)}
 
+  /* ============ Self-check block ============ */
   .selfcheck{
     background:linear-gradient(180deg,#fffdf7 0%, #fbf4e8 100%);
     border:2px solid var(--claude); border-radius:3px;
@@ -252,6 +259,7 @@
   }
   .selfcheck .takeaway strong{color:var(--claude-soft)}
 
+  /* ============ Weibo TOP10 ============ */
   .weibo{
     background:var(--card); border:1px solid var(--line);
     border-radius:3px; padding:24px 28px; box-shadow:var(--shadow);
@@ -288,6 +296,7 @@
     vertical-align:1px;
   }
 
+  /* ============ Takeaway ============ */
   .takeaway-box{
     background:var(--ink); color:var(--paper-soft);
     padding:28px 32px; margin-top:32px; border-radius:3px;
@@ -304,6 +313,7 @@
   .takeaway-box li{margin-bottom:10px}
   .takeaway-box strong{color:var(--claude-soft)}
 
+  /* ============ Footer ============ */
   footer{
     margin-top:60px; padding-top:24px;
     border-top:1px solid var(--line);
@@ -316,6 +326,7 @@
   }
   footer .disclaimer{color:#b5a98a; margin-top:6px}
 
+  /* ============ Responsive ============ */
   @media (max-width:640px){
     .container{padding:32px 20px 60px}
     h1.title{font-size:40px}
@@ -353,33 +364,33 @@
   <div class="hero-stats">
     <div class="stat">
       <div class="label">上证指数</div>
-      <div class="value">4180.13 <span class="delta down">-0.00%</span></div>
+      <div class="value">~4180 <span class="delta down">-0.00%</span></div>
       <div class="asof">05-08 收</div>
     </div>
     <div class="stat">
       <div class="label">创业板指</div>
-      <div class="value">~3716 <span class="delta down">-0.96%</span></div>
+      <div class="value">— <span class="delta down">-0.96%</span></div>
       <div class="asof">05-08 收</div>
     </div>
     <div class="stat">
-      <div class="label">深证成指</div>
-      <div class="value">~15101 <span class="delta down">-0.50%</span></div>
+      <div class="label">科创 50</div>
+      <div class="value">— <span class="delta down">-2.00%</span></div>
       <div class="asof">05-08 收</div>
     </div>
     <div class="stat">
       <div class="label">纳斯达克</div>
-      <div class="value">25143.30 <span class="delta down">-0.13%</span></div>
-      <div class="asof">05-07 收</div>
+      <div class="value">— <span class="delta up">+1.71%</span></div>
+      <div class="asof">05-08 收</div>
+    </div>
+    <div class="stat">
+      <div class="label">S&amp;P 500</div>
+      <div class="value">— <span class="delta up">+0.84%</span></div>
+      <div class="asof">05-08 收</div>
     </div>
     <div class="stat">
       <div class="label">Brent 原油</div>
-      <div class="value">$101.41 <span class="delta down">-0.54%</span></div>
-      <div class="asof">05-07 收</div>
-    </div>
-    <div class="stat">
-      <div class="label">HK 2661 · 轻松健康</div>
-      <div class="value">数据真空 <span class="delta down">N/A</span></div>
-      <div class="asof">04-21 起暂未公开</div>
+      <div class="value">$101.47 <span class="delta down">-1.84%</span></div>
+      <div class="asof">05-08 实时</div>
     </div>
   </div>
 </header>
@@ -406,17 +417,17 @@
   </div>
 
   <div class="selfcheck">
-    <h3>轻松健康集团（02661.HK）· 当日追踪 · Day 19(节后第六日 · 周六)</h3>
-    <div class="subtitle-line">仅展示近 72 小时（05-06 至 05-09）内的新动态——历史背景不再重复。今日（05-09 周六港股休市）截至发稿未采集到新增针对性报道，公司侧 5 月份逐日股价 / 成交量数据真空仍未补齐。</div>
+    <h3>轻松健康集团（02661.HK）· 当日追踪 · Day 19（周末复盘）</h3>
+    <div class="subtitle-line">仅展示近 72 小时（05-07 至 05-09）内的新动态——历史背景不再重复。今日（05-09）为周六非交易日，公司侧无新增针对性报道，舆情进入"周末观察窗口"。</div>
 
     <div class="grid">
       <!-- 正面 -->
       <div class="pos">
         <div class="label">正面 · 近 72h 新动态</div>
         <ul>
-          <li><strong>05-09（今日 · 周六港股休市）</strong>：暂无新增针对性报道。5/8 工信部联合发布 <a href="https://finance.sina.com.cn/roll/2026-05-08/doc-inhxewcz2179608.shtml">《人工智能终端智能化分级》(GB/Z 177—2026)</a> 国标，覆盖手机/眼镜/耳机/汽车座舱等七类终端但<strong>暂未将"医疗 AI 终端"纳入首批"N"</strong>——周末是公司主动倡议"医疗 AI 终端纳入下一批 N"的<strong>最佳政策搭车窗口</strong>，建议在 5/11 周一开盘前完成草拟。</li>
-          <li><strong>05-08</strong>：A 股周五震荡分化、上证守 4180、个股普涨，证券媒体仍未将 02661 纳入"AI + 医疗"概念股梳理；但同期亦无负面跟进，<strong>"被遗忘"是中性窗口</strong>。<a href="https://finance.sina.com.cn/stock/t/2026-05-07/doc-inhwzrtp2836965.shtml">新浪 · 5/7 收盘综述</a></li>
-          <li><strong>05-06 至 05-09</strong>：未在新浪 / 智通 / 九方智投等平台搜集到针对公司的负面研报；同期"证元芳"循证医学智能体 + Skill 商店概念在医疗 AI 板块仍是稀缺标签。<a href="https://gmg.9fzt.com/dynamic/HKSE/02661/index.html">九方智投 · 02661 公司动态</a></li>
+          <li><strong>05-09（今日）</strong>：周六非交易日，暂无新增针对性报道。本周市场注意力被"AI 算力 + 商业航天 + 人形机器人"三大板块吸走，公司舆情进一步被科技主线稀释，二次发酵风险继续走低。</li>
+          <li><strong>05-08</strong>：A 股 5/8 "科技主线引领结构性行情"，午间 MLF/LPR 同步下调释放流动性宽松信号——"健康 + AI"双引擎叙事处于宏观顺风窗口。<a href="http://mp.cnfol.com/54467/article/1778196758-142410364.html">中金 · 5/8 政策与产业共振</a></li>
+          <li><strong>05-07</strong>：港股恒生指数 5/7 收涨 +1.57%、恒生科技 +3.06%；半导体板块壁仞 / 澜起 / 华虹 / 中芯齐涨——同板块情绪外溢对"AI + 医疗"概念股形成估值修复支持。<a href="https://finance.sina.com.cn/jjxw/2026-05-07/doc-inhxahri5110404.shtml">新浪财经 · 港股 5/7 收评</a></li>
         </ul>
       </div>
 
@@ -424,15 +435,15 @@
       <div class="neg">
         <div class="label">负面 · 近 72h 新动态</div>
         <ul>
-          <li><strong>05-09（今日 · 周六港股休市）</strong>：暂无新增负面报道。但 Day 19（满三周窗口）仍未公开披露 04-21 至 05-09 的逐日收盘价 / 成交量数据，"价格修复路径不可见"已演化为 IR 端的<strong>"信息披露黑箱"标签</strong>，下次任何披露都会被市场放在更高显微镜下审视。</li>
-          <li><strong>05-08</strong>：最高人民法院发布 5 起<a href="https://www.chinanews.com.cn/gn/2026/05-08/10617278.shtml">侵犯公民个人信息犯罪典型案例</a>，<strong>医疗系统"内鬼"案</strong>（外包公司窃取医院挂号数据）位列其一——医疗 AI / 数字健康赛道的"数据合规叙事"周五被全行业拉到聚光灯下，对暂未公开"证元芳"数据治理细则的公司构成<strong>被动审视风险</strong>，且周末 48 小时仍是自媒体二次发酵窗口。</li>
-          <li><strong>05-06</strong>：阿里腾讯将于 5/13 同日发布 Q1 财报，云业务 + AI 商业化兑现度预期被重置——<a href="https://finance.sina.com.cn/roll/2026-05-07/doc-inhwzrtr5295559.shtml">华尔街见闻 · 阿里云增速冲 40%+</a>。这意味着下周一开始市场关注度被两大互联网巨头业绩窗口吸走，公司的"主动叙事窗口"实际只剩 <strong>5/9–5/10 周末 + 5/11 周一开盘前</strong>两个时段。</li>
+          <li><strong>05-09（今日）</strong>：暂无新增负面报道。但公司侧 5 月份逐日股价 / 成交量 / 公告披露密度仍为整体行业偏低水平——"信息真空"议题进入第三周，是空头叙事的潜在 hook。</li>
+          <li><strong>05-08</strong>：本周《时代》2026 全球十大 AI 公司榜单刷屏（字节、智谱、阿里入选），"中国 AI 公司"被国际媒体口径正式收录，但榜单与延伸报道中并未提及"证元芳"或公司名——错过一次"AI + 医疗"被国际背书的窗口，是潜在被遗忘信号。</li>
+          <li><strong>05-07</strong>：节后第四日，三地科技主线齐涨当日，主流财经媒体未将 02661 纳入"AI + 医疗"概念股梳理名单——"被遗忘"风险量化进入第三个交易日。<a href="https://gmg.9fzt.com/dynamic/HKSE/02661/index.html">九方智投 · 02661 公司动态</a></li>
         </ul>
       </div>
     </div>
 
     <div class="takeaway">
-      <strong>PR 自查建议（Day 19 · 周六周末复盘）：</strong>周末 48 小时是 5/13 阿里腾讯业绩窗口前公司唯一可控的<strong>主动叙事窗口</strong>。建议在 5/11 周一开盘前完成<strong>三件事</strong>：①借周五 AI 终端国标 GB/Z 177—2026 的政策窗口，主动以"医疗 AI 终端纳入 N 类目录"为题<strong>提交建议函或联合发声</strong>，把 02661 从"被遗忘"转为"政策建言者"； ②呼应周五最高法医疗信息"内鬼"案，<strong>主动发布"证元芳" 数据治理白皮书</strong>（数据来源 / 脱敏路径 / 第三方审计），将被动审视风险转为合规叙事资产； ③明确 <strong>CFO 继任进度 + 5 月信息披露排期表</strong>，把"披露密度"从空头 hook 转为 IR 可控议程。三者越早动作、越能把"AI 算力 + 医疗合规"两条同周热点同时收为公司叙事抓手。周末窗口稍纵即逝。
+      <strong>PR 自查建议（Day 19 · 周末复盘版）：</strong>本周"<strong>外部顺风 + 内部静默</strong>"的非对称结构未变，建议下周（5/11–5/15）三件事必须落地：①借周一 A 股开盘"商业航天 + 人形机器人 + AI 算力"主线的资金延续，主动放出一篇<strong>带量化数据的"证元芳"运营月报</strong>（合作医院新增数 / 月活临床调用 / API 接入医生数），抢占被遗忘窗口；②对外明确<strong>CFO 继任进度与 5 月信息披露排期表</strong>，把"披露密度"由空头 hook 转为 IR 可控议程；③借《时代》2026 AI 十强榜单热度，蹭"中国 AI 医疗"叙事而非硬怼算力——此为本周可落地的最后一个搭车点。
     </div>
   </div>
 </section>
@@ -445,39 +456,41 @@
   </div>
 
   <div class="deepdive">
-    <div class="kicker">头条 · 国家政策</div>
-    <h3><a href="https://finance.sina.com.cn/roll/2026-05-08/doc-inhxewcz2179608.shtml">《人工智能终端智能化分级》国标发布：L1–L4 四级划分，覆盖手机 / 眼镜 / 耳机 / 汽车座舱等七类终端</a></h3>
-    <p><strong>新政策展开：</strong>5 月 8 日工信部、市场监督管理总局、商务部联合发布 <strong>GB/Z 177—2026《人工智能终端智能化分级》</strong>系列国标，采用 "<strong>2+N</strong>" 架构——"2" 是《第 1 部分：参考框架》和《第 2 部分：总体要求》，"N" 首批覆盖 <strong>手机、电脑、电视、智能眼镜、汽车座舱、智能音箱、耳机</strong>七类产品。智能化等级从 <strong>L1 响应级 → L2 工具级 → L3 辅助级 → L4 协同级</strong>逐级提升，类似自动驾驶 L1–L5 的国家级评估框架。<a class="inline-src" href="https://www.ithome.com/0/947/582.htm">IT 之家</a></p>
-    <p>对 PR 视角的直接含义：这是 2026 年继 4 月"两办节能降碳"之后，国家级"<strong>新质生产力</strong>"主叙事的第三个可对齐锚点（前两个是"AI+"行动方案、节能降碳）。手机 / 智能眼镜 / 智能音箱 / 汽车 / 耳机五类品牌从今日起在产品发布会与官网文案中宣称"<strong>L3 辅助级 / L4 协同级</strong>"具备国标定义可援引。同时也意味着：把 AI 能力夸成"L4 协同级"但实际只到 L2 工具级的产品 PR 文案，从今日起将面对"<strong>国标可证伪</strong>"的合规风险。建议本周完成三件事：现有 AI 产品按国标自评、官网话术对齐、销售物料合规审查。<a class="inline-src" href="https://www.stdaily.com/web/gdxw/2026-05/09/content_513684.html">科技日报</a></p>
+    <div class="kicker">头条 · AI 资本格局</div>
+    <h3><a href="https://wallstreetcn.com/articles/3763622">Google 400 亿入股 Anthropic + OpenAI 解除微软独家：AI 行业进入"<em>多极联盟</em>"时代</a></h3>
+    <p>本周二级市场最重要的两条结构性消息：（1）Google 宣布以 3800 亿美元估值向 Anthropic 投入<strong>最高 400 亿美元</strong>（首期 100 亿立即到账），从"客户 + 合作方"升级为"重要股东 + 算力供应方"；（2）OpenAI 同步宣布<strong>解除微软独家授权</strong>，向所有云厂商开放模型与 IP 许可（许可期延至 2032 年），微软仍保留 20% 收入分成至 2030 年。</p>
+    <p>两件事叠加意味着：AI 算力 / 模型供给侧正式从"双 M 双寡头"切换到"<strong>四股东一开放底</strong>"——OpenAI 任何云都可以买、Anthropic 由 Google 与 Amazon 双押注、xAI 自营、DeepSeek 系开源持续挤压。对 B 端采购方而言，"<strong>多家可替换</strong>"从口号变成合同条款。</p>
+    <p>对 PR 端最直接的影响——上市公司财报电话、官网信任页、IR 路演 deck 中所有"AI 合作伙伴"段落需要在 Q2 内重写一次。"独家"、"战略合作"两个词的法律含义在 2026 年的市场预期里已贬值；"<strong>多供应方 + 数据主权</strong>"成为新的可信叙事单位。</p>
     <div class="sources">
       <strong>延伸阅读：</strong>
-      <a href="https://finance.sina.com.cn/jjxw/2026-05-08/doc-inhxerwi4220914.shtml">新浪 · 国标宣贯会</a>
-      <a href="https://tech.cnr.cn/gstj/20260509/t20260509_527614578.shtml">央广 · 工信部解读</a>
-      <a href="https://finance.sina.com.cn/money/fund/jjh/2026-05-08/doc-inhxcyym7761646.shtml">新浪 · 手机汽车标准落地</a>
+      <a href="https://m.thepaper.cn/newsDetail_forward_33081828">澎湃 · Anthropic 颠覆 OpenAI</a>
+      <a href="https://www.21jingji.com/article/20260421/herald/bf6f59a60ca70cf7ab4616e2dfc274fc.html">21 经济 · 谷歌也急了</a>
+      <a href="https://www.woshipm.com/ai/6376973.html">人人都是产品经理 · AI 大事件</a>
     </div>
   </div>
 
   <div class="deepdive">
-    <div class="kicker">头条 · AI 算力</div>
-    <h3><a href="https://finance.sina.com.cn/stock/usstock/c/2026-05-08/doc-inhxckav4726620.shtml">OpenAI 与博通 1800 亿美元芯片豪赌遇冷：首期 180 亿耗资落地，但微软采购承诺尚未到位</a></h3>
-    <p>据 The Information 看到的内部备忘录，OpenAI 与博通 2024 年宣布的 <strong>1800 亿美元自研芯片合作</strong>陷入融资僵局——双方原本将其视作既定交易，但数月后发现"<strong>没人想清楚谁来出钱</strong>"。当前正在谈判的方案：博通为<strong>第一期 1.3 GW 数据中心容量 / 约 180 亿美元</strong>提供资金，但条件是"<strong>微软承诺采购首批四成产能</strong>"，微软至今未签字。代号 "Nexus" 的 10 GW 完整项目，仅芯片成本就达 1800 亿美元，未计入数据中心建设与配套开支。<a class="inline-src" href="https://finance.sina.com.cn/tech/digi/2026-05-08/doc-inhxcusr4532441.shtml">新浪科技</a></p>
-    <p>对 PR 视角的直接含义：本周 OpenAI 在二级市场叙事面急剧承压——4/27 英伟达 5.26 万亿市值峰值、5/2 Anthropic 9000 亿融资洽谈、5/8 OpenAI 自研芯片融资遇冷，三件事的顺序意味着"<strong>OpenAI 一家独大</strong>"叙事正在分化为"<strong>英伟达 / Anthropic / 三星 / SK 海力士各执一隅</strong>"的多极格局。任何已宣称"接入 OpenAI"的国内 B 端客户，本周 IR/PR 物料应该立即升级为"<strong>多模型 / 多供应商</strong>"叙事，避免被动绑定到一个估值面正在被重新定价的合作方。同日 A 股大普微<a href="https://finance.sina.com.cn/wm/2026-05-08/doc-inhxfhtx4156846.shtml">上市 14 天涨 10 倍 / 市值 2200 亿</a>触发风险提示，AI 算力链的"<strong>需求确定性 vs. 资金落地</strong>"两端的分裂在今日同时被放到台前。</p>
+    <div class="kicker">头条 · 重大事故</div>
+    <h3><a href="https://www.mem.gov.cn/xw/yjyw/202605/t20260508_602865.shtml">浏阳烟花厂"5·4"特别重大事故：37 死 1 失踪，国务院调查组 5/8 召开第一次全体会议</a></h3>
+    <p>5 月 4 日 16:43，湖南长沙浏阳市华盛烟花制造燃放有限公司发生特别重大爆炸事故。截至 5 月 8 日 12 时，事故造成 <strong>37 人死亡、1 人失联、51 人在医救治</strong>。5 月 8 日下午，国务院"5·4"特别重大爆炸事故调查组召开第一次全体会议，由应急管理部部长张成中主持。调查组由应急管理部牵头，公安部、海关总署、市场监管总局、全国总工会、湖南省人民政府等参加，遵循"<strong>科学严谨、依法依规、实事求是、注重实效</strong>"和"<strong>四不放过</strong>"原则。</p>
+    <p>同期湖南省委已部署烟花爆竹生产企业全面停产整顿；涉事企业 3 个月前曾受过处罚，公司性质为外贸厂商。这是 2026 年首例"<strong>特别重大</strong>"级别工业事故，国务院级调查组的快速到位是节后政府侧应急响应模板的最新一次完整演练。对工业、能源、化工、烟花爆竹、出口贸易五类客户的 PR 团队，建议本周完成"应急响应 SOP + 信息披露排期"的复盘演练，重点学习"<strong>事实查清楚 + 问题查清楚 + 责任查清楚</strong>"三层结构的对外口径设计。</p>
     <div class="sources">
       <strong>延伸阅读：</strong>
-      <a href="https://finance.sina.com.cn/stock/usstock/c/2026-05-08/doc-inhxckax4500082.shtml">新浪 · 博通要求微软四成承诺</a>
-      <a href="https://finance.sina.com.cn/stock/relnews/cn/2026-05-08/doc-inhxewcz7587740.shtml">新浪 · 大普微 14 天 10 倍</a>
+      <a href="https://m.thepaper.cn/newsDetail_forward_33104014">澎湃 · 烟花产业对浏阳的重要性</a>
+      <a href="http://cpc.people.com.cn/n1/2026/0506/c64387-40714199.html">人民网 · 全面停产整顿</a>
+      <a href="https://www.chinanews.com.cn/sh/2026/05-06/10616250.shtml">中新网 · 已完成 5 轮搜救</a>
     </div>
   </div>
 
   <div class="deepdive">
-    <div class="kicker">头条 · 全球宏观</div>
-    <h3><a href="https://finance.sina.com.cn/stock/bxjj/2026-05-08/doc-inhxfamx2109929.shtml">美国 4 月非农新增 11.5 万人超预期 + 国际贸易法院再判特朗普 10% 关税违法</a></h3>
-    <p>北京时间 5/8 晚 20:30，美国劳工统计局公布：<strong>4 月非农新增就业 11.5 万人</strong>（市场预期 6.2 万、3 月 17.8 万），失业率维持 <strong>4.3%</strong>。"近几个月在大幅增长与大幅下滑之间摇摆"的劳动力市场，给联储带来"<strong>滞胀型纠结</strong>"——失业未恶化但裁员预告增加，4 月美科技行业宣布裁员人数明显抬升。同日盘中道指 -0.63%、纳指 -0.13%、标普 -0.38%，标普盘中创新高后回落，<strong>"非农超预期 ≠ 利好"的预期重定价</strong>正在发生。<a class="inline-src" href="https://finance.sina.com.cn/jjxw/2026-05-08/doc-inhxerwc7601021.shtml">新浪 · 非农前瞻</a></p>
-    <p><strong>同日另一条：</strong>美国国际贸易法院 5/7 裁定，特朗普 10% 全球进口关税"<strong>法律依据不成立</strong>"——这是 2 月最高法 6:3 裁定 IEEPA 关税违法之后的第二次司法否决，1750 亿美元退税悬案被重新激活。<a class="inline-src" href="https://www.chinanews.com.cn/gj/2026/05-08/10617209.shtml">中新网</a> 紧接着是特朗普即将访华的消息：<strong>计划邀请英伟达 / 苹果 / 埃克森美孚 CEO 随行</strong>。<a class="inline-src" href="https://sputniknews.cn/20260508/1071140182.html">卫星社</a> 三件事并列在一日：关税司法承压、对华接触加码、AI 龙头随行——这是 2026 年 Q2 中美科技品牌叙事最复杂的一个时点。建议有跨境业务的 PR 团队对"<strong>关税豁免 + 对华接触 + AI 出海</strong>"三个维度同时准备 messaging 模板。</p>
+    <div class="kicker">头条 · 货币政策</div>
+    <h3><a href="https://caifuhao.eastmoney.com/news/20260508073624802639380">5/8 央行"降息+降准"组合拳落地：MLF/LPR 同步下调，15 日万亿降准接力</a></h3>
+    <p>5 月 8 日起 MLF、LPR 同步下调，房贷利率随之下调，<strong>直接释放流动性宽松信号</strong>。此轮降息叠加 5 月 15 日即将执行的<strong>万亿降准</strong>，构成 2026 年以来最具节奏感的"<strong>降息 + 降准 + 财政发力</strong>"三重组合。同日发改委调整国内成品油价格、发布《中国营商环境发展报告（2026）》；财政部、证监会就两家内地会计师事务所获准从事 H 股企业审计业务答记者问，进一步打开内 / 外资审计衔接通道。</p>
+    <p>5 月 7 日北向资金净流入 <strong>215 亿元</strong> 创近三季度新高，连续 10 日累计超 450 亿元——外资侧已在用脚投票。对房地产、银行、保险、出口、医药五类客户的 IR/PR 团队，下周路演 deck 应统一加入"<strong>降息周期 + 北向流入</strong>"两个新锚点；同时财政部 H 股审计放行让港股 IR 故事可以重新打开"内资审计可获得性"的合规叙事。</p>
     <div class="sources">
       <strong>延伸阅读：</strong>
-      <a href="https://finance.sina.com.cn/stock/usstock/c/2026-05-08/doc-inhxckav4730394.shtml">新浪 · 5/8 外盘头条</a>
-      <a href="https://finance.sina.com.cn/headline/2026-05-08/doc-inhxcqkr2383894.shtml">新浪 · 隔夜要闻汇总</a>
+      <a href="https://finance.sina.com.cn/money/fund/jjgsgd/2026-05-08/doc-inhxfnzv4057559.shtml">新浪 · 5 月投资要闻</a>
+      <a href="https://www.stcn.com/article/detail/3900052.html">证券时报 · 外交部表态</a>
     </div>
   </div>
 </section>
@@ -486,64 +499,64 @@
 <section id="finance">
   <div class="section-head">
     <h2><span class="cn">财经 / 宏观</span><span class="en">/ Markets</span></h2>
-    <div class="section-meta">8 条 · 今日</div>
+    <div class="section-meta">8 条 · 周末复盘</div>
   </div>
 
   <ol class="news-list">
     <li class="news-item">
       <div class="num">01</div>
       <div>
-        <div class="news-title"><span class="tag tag-market">A股</span><a href="https://www.sina.cn/news/detail/5296324285039104.html">A 股周五震荡分化：上证守 4180 点、创业板 -0.96%、成交额 3.05 万亿连续 3 天破 3 万亿</a></div>
-        <div class="news-body">5/8 收盘：上证 <strong>4180.13</strong> 几乎平盘（-0.00%）、深成 -0.50%、创业板 <strong>-0.96%</strong>、科创 50 跌超 2%。但<strong>个股层面 3600+ 上涨、125 家涨停、涨跌中位数 +0.73%</strong>，呈现典型"指数熄火、个股活跃"的高位整理。成交额 <strong>3.05 万亿</strong>连续 3 天破 3 万亿，资金未撤场。AI 算力 / 存储芯片本周内累计涨幅过大，今日触发结构性获利兑现。</div>
+        <div class="news-title"><span class="tag tag-market">A股</span><a href="https://www.sina.cn/news/detail/5296324285039104.html">5/8 A 股震荡分化：上证稳守 4180 微跌、创业板 -0.96%、科创 50 跌超 2%</a></div>
+        <div class="news-body">5 月 8 日收盘：上证指数稳守 4180 点，<strong>微跌 0.00%</strong>；深成指 -0.50%、创业板 -0.96%、科创 50 跌超 2%。但个股层面 <strong>3600 多只上涨、125 家涨停、涨跌中位数 +0.73%</strong>，成交额 3.05 万亿连续第三天破 3 万亿。<strong>"高低切换"特征明显</strong>：人形机器人涨停潮、商业航天爆发、军工电子 + 光纤航运同步走强；半导体芯片、算力硬件、锂电、光伏等前期涨幅大的赛道集体回调。<a class="inline-src" href="https://www.zhihu.com/question/2036048915083038826/answer/2036119260599169133">知乎 · 5/8 行情解读</a></div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">02</div>
       <div>
-        <div class="news-title"><span class="tag tag-market">存储芯片</span><a href="https://finance.sina.com.cn/wm/2026-05-08/doc-inhxfhtx4156846.shtml">大普微 14 天涨 10 倍 / 市值 2200 亿，发布严重异常波动公告提示风险</a></div>
-        <div class="news-body"><strong>重要事件展开：</strong>大普微（301666.SZ）4/16 上市，发行价 46.08 元，开盘 207.23 元，<strong>14 个交易日涨 10 倍</strong>，市值突破 <strong>2200 亿元</strong>。今日盘后公告"严重异常波动"，自述"经营情况未发生重大变化，但 AI 商业化节奏 / 云计算投入 / 下游应用景气度<strong>存在波动和不确定性</strong>"。Q1 营收 13.10 亿（同比 +340.95%）、净利 3.70 亿（同比扭亏）。这是 2026 年最典型的"AI 信仰 + 业绩 + 风险预警"三重叠加样本——监管侧"<strong>提示风险也是叙事</strong>"的新口径正在被反复验证。<a class="inline-src" href="https://finance.sina.com.cn/stock/relnews/cn/2026-05-08/doc-inhxewcz7587740.shtml">新浪 · 风险提示</a></div>
+        <div class="news-title"><span class="tag tag-market">美股</span><a href="https://finance.sina.com.cn/roll/2026-05-09/doc-inhxftit3970278.shtml">5/8 美股三大指数集体收涨：道 +0.02%、纳指 +1.71%、标普 +0.84%</a></div>
+        <div class="news-body">5 月 8 日美股收盘：<strong>道指 +0.02%、纳指 +1.71%、标普 500 +0.84%</strong>。RBC 上调标普 500 年底目标价，看好 AI 行业前景。涨幅居前个股：<strong>闪迪 +16.6%、中美光科技 +15.49%</strong>、特斯拉 +4.02%、英伟达 +1.75%。AI + 存储芯片仍是周内最强主线，"<strong>AI Capex 落地到具体硬件标的</strong>"的叙事正在从模型层下沉到外设和存储层。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">03</div>
       <div>
-        <div class="news-title"><span class="tag tag-market">美股</span><a href="https://www.stcn.com/article/detail/3753869.html">美股 5/7 三大指数集体下跌，纳指标普盘中创新高后回落，特斯拉曾涨超 7%</a></div>
-        <div class="news-body">5/7 收盘：道指 -0.63%、标普 -0.38%、纳指 -0.13%。<strong>盘中纳指 / 标普双双创新高随后回落</strong>，量子计算板块爆发，存储板块回调（前几日涨幅过大）。中概股普跌：<strong>富途控股 -13.76%、小马智行 -6.23%、台积电 / 阿里 / 拼多多齐跌</strong>，纳斯达克中国金龙指数 -1.40%。市场在等待今晚非农数据 + 联储下一步利率指引。</div>
+        <div class="news-title"><span class="tag tag-policy">货币政策</span><a href="https://caifuhao.eastmoney.com/news/20260508073624802639380">5/8 央行 MLF / LPR 同步下调，5/15 万亿降准接力，外资 10 日累计净流入 450 亿+</a></div>
+        <div class="news-body"><strong>重要事件展开：</strong>5 月 8 日起 MLF、LPR 同步下调，房贷利率随之下调；5 月 15 日万亿降准接力。5 月 7 日北向资金净流入 <strong>215 亿元</strong> 创近三季度新高、连续 10 日累计超 <strong>450 亿元</strong>。这是 2026 年以来"<strong>降息 + 降准 + 外资流入</strong>"罕见的三重共振，对地产、银行、保险、消费板块的 Q2 IR 叙事提供新锚点。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">04</div>
       <div>
-        <div class="news-title"><span class="tag tag-market">业绩季</span><a href="https://finance.sina.com.cn/stock/relnews/hk/2026-05-08/doc-inhxcusr4603771.shtml">阿里腾讯下周二（5/13）同日发 Q1 财报，市场预期阿里云增速冲 40%+</a></div>
-        <div class="news-body"><strong>业绩预热展开：</strong>浙商证券预期阿里云收入增速从此前 30% 区间进一步攀升至 <strong>40%+</strong>，主驱动是 AI 产业化需求 + 新一代 AI 云产品。彭博一致预期：腾讯 Q1 营收同比 +9.6%–12.4%、Non-IFRS 净利同比 +8.9%–12.9%。这是 2026 年中国互联网"<strong>讲故事 → 看业绩</strong>"切换的标志性窗口——具备清晰商业化路径的 AI 业务将获得明显估值溢价。<a class="inline-src" href="https://finance.sina.com.cn/roll/2026-05-07/doc-inhwzrtr5295559.shtml">华尔街见闻</a></div>
+        <div class="news-title"><span class="tag tag-market">板块</span><a href="https://finance.sina.com.cn/wm/2026-05-08/doc-inhxemqm4238420.shtml">商业航天 + 人形机器人双线爆发：宇树机器人再降价、神剑股份六连板</a></div>
+        <div class="news-body">本周 A 股两大主线：<strong>商业航天</strong>（电科蓝天 20cm 涨停、航天发展、陆君投资、航天长峰封板）+ <strong>人形机器人</strong>（巨轮智能两连板、五洲新春、天奇股份、襄阳轴承封板，宇树机器人公开降价）。机构观点：Q2 多型号火箭海内外迎首飞 + 卫星批量招标在即；人形机器人从 0→1 切换到 1→100"<strong>小批量交付年</strong>"。<a class="inline-src" href="https://finance.sina.com.cn/jjxw/2026-05-06/doc-inhwxnup3498332.shtml">新浪 · 五月开门红</a></div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">05</div>
       <div>
-        <div class="news-title"><span class="tag tag-policy">关税</span><a href="https://www.chinanews.com.cn/gj/2026/05-08/10617209.shtml">美国国际贸易法院再判特朗普 10% 全球关税违法，1750 亿美元退税悬案重启</a></div>
-        <div class="news-body">5/7 美国国际贸易法院裁定特朗普 10% 全球进口关税"<strong>法律依据不成立</strong>"，这是继 2/20 最高法 6:3 裁定 IEEPA 关税违法之后的第二次司法否决。出口企业可重新主张关税退还，<strong>1750 亿美元退税悬案</strong>被重新激活。但白宫已多次重申"换条法条再加"——关税司法波动正常化，对跨境品牌 IR 而言"关税场景化"成为常态预设。</div>
+        <div class="news-title"><span class="tag tag-policy">监管</span><a href="https://www.stcn.com/article/detail/3900052.html">证监会 5/8 严肃查处元道通信、清越科技财务造假，财政部放行 H 股内地审计</a></div>
+        <div class="news-body">两件事同日推进：（a）证监会查处<strong>元道通信、清越科技</strong>财务造假案件——这是 2026 年继 2 月康得新二审后第二批"代表性案例"，强信号是<strong>财务造假问责加码</strong>；（b）财政部 + 证监会<strong>放行两家内地会计师事务所从事 H 股企业审计</strong>，对在港中资金融、医药、互联网公司构成"披露成本下降"利好。两条新闻共同指向"<strong>更严的执法 + 更顺的合规通道</strong>"双向收紧。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">06</div>
       <div>
-        <div class="news-title"><span class="tag tag-market">非农</span><a href="https://finance.sina.com.cn/stock/bxjj/2026-05-08/doc-inhxfamx2109929.shtml">美国 4 月非农新增 11.5 万人超预期，失业率维持 4.3%，联储"滞胀型纠结"加深</a></div>
-        <div class="news-body">市场预期 6.2 万 / 实际 11.5 万，<strong>超预期但低于 3 月的 17.8 万</strong>。失业率持平 4.3%。4 月美国科技行业裁员预告数明显抬升、失业救济申请人数小幅反弹。"<strong>就业不弱 + 裁员加快</strong>"的混合信号给联储增加纠结——市场对 6 月降息概率从此前 40%+ 重新下修。</div>
+        <div class="news-title"><span class="tag tag-market">能源</span><a href="https://m.cngold.org/energy/xw10486903.html">国际油价小幅回落：WTI $95.96 / Brent $101.47，5/8 当日 -1.74% / -1.84%</a></div>
+        <div class="news-body">5 月 8 日北京时间盘中：<strong>WTI $95.96（-1.74%）、Brent $101.47（-1.84%）</strong>。停火延长 + 库存数据偏空合力压制价格。但 Brent 仍站在百元之上——能源、化工、农化客户的 Q2 毛利率叙事建议：把"<strong>对冲覆盖比例</strong>"作为新增披露字段，比单纯讲"价格波动"更能稳住资本市场预期。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">07</div>
       <div>
-        <div class="news-title"><span class="tag tag-market">能源</span><a href="https://m.cngold.org/energy/xw10486903.html">国际油价小幅回落，Brent 报 $101.41，阿巴斯港爆炸消息推动 WTI 微涨 0.2%</a></div>
-        <div class="news-body">Brent 5/7 收报 <strong>$101.41</strong>（-0.54%），WTI 受阿巴斯港附近爆炸消息推动微涨 0.2%。市场仍在等待<strong>伊朗对重开霍尔木兹海峡 + 结束战争提议的回应</strong>。这是 2026 年第三度"地缘扰动 + 高位油价 + 联储纠结"的三方拉锯——能源、化工、航空、农化客户的下半年毛利率叙事仍要为高油价场景准备话术。</div>
+        <div class="news-title"><span class="tag tag-market">汽车</span><a href="https://www.21jingji.com/article/20260507/herald/41c983d8cbb4d716c6db7a0e520aef75.html">新势力 4 月销量洗牌：零跑独占 7 万级、理想 / 小米 / 小鹏 / 鸿蒙抢第二，比亚迪 32.1 万辆稳居第一</a></div>
+        <div class="news-body">4 月销量榜单：<strong>零跑超 7 万、比亚迪 32.1 万</strong>，新势力第二集团贴近：<strong>理想 34085、鸿蒙智行 32759、小鹏 31011、小米超 3 万、蔚来 29356</strong>。5 月底蔚来 ES9（50 万+对标问界 M9）+ 乐道 L80（卡位理想 L6）+ 小米 YU7 GT + 小鹏 GX 集中上市，<strong>5–6 月成上半年市场分水岭</strong>。汽车行业品牌方建议：发布会节奏排到 5 月下旬，避开商业航天、人形机器人独占注意力的窗口。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">08</div>
       <div>
-        <div class="news-title"><span class="tag tag-market">公告</span><a href="https://finance.sina.com.cn/stock/s/2026-05-08/doc-inhxcusp2307355.shtml">A 股周五公告与交易提示：股海导航汇总 7 家停牌筹划事项 + 多家披露 Q1 业绩</a></div>
-        <div class="news-body">5/8 沪深两市公告与交易提示窗口：多家公司停牌筹划重大事项 / 收购、Q1 财报集中披露收尾。结合"AI + 存储 + Robotaxi"主线本周连涨 + 大普微触发风险提示，下周一开盘前可能出现"<strong>结构性减仓 → 局部抢跑</strong>"的双向博弈。建议跟踪带"AI 化业务"标签的客户尤其注意周一开盘策略。</div>
+        <div class="news-title"><span class="tag tag-market">展会</span><a href="https://caifuhao.eastmoney.com/news/20260508073624802639380">2026 北京科博会 5/8 启幕：AI 芯片、算力基础设施、数字经济、先进制造四大主题</a></div>
+        <div class="news-body">2026 北京科博会 5 月 8 日启幕，核心聚焦 <strong>AI 芯片、算力基础设施、数字经济、先进制造</strong>四大主题。这是节后第二个"国家级硬科技"窗口（第一是 4 月广交会）。北京中关村、海淀科创类客户建议在科博会展期同步推动 PR 叙事——把"<strong>北京硬科技集群</strong>"作为本周品牌曝光锚点。</div>
       </div>
     </li>
   </ol>
@@ -553,64 +566,64 @@
 <section id="ai">
   <div class="section-head">
     <h2><span class="cn">AI / 科技</span><span class="en">/ AI &amp; Tech</span></h2>
-    <div class="section-meta">8 条 · 今日</div>
+    <div class="section-meta">8 条 · 周末复盘</div>
   </div>
 
   <ol class="news-list">
     <li class="news-item">
       <div class="num">01</div>
       <div>
-        <div class="news-title"><span class="tag tag-policy">国标</span><a href="https://www.ithome.com/0/947/582.htm">AI 终端国标 GB/Z 177—2026 出炉：L1 响应级 → L4 协同级，首批 7 类终端</a></div>
-        <div class="news-body"><strong>新概念展开：</strong>5/8 工信部 + 市场监督管理总局 + 商务部联合发布《人工智能终端智能化分级》系列国标，"<strong>2+N</strong>" 架构。等级框架：<strong>L1 响应级</strong>（按指令执行）、<strong>L2 工具级</strong>（多模态生成）、<strong>L3 辅助级</strong>（理解上下文 / 主动建议）、<strong>L4 协同级</strong>（跨设备 / 跨任务自主协作）。首批 N 覆盖手机、电脑、电视、智能眼镜、汽车座舱、智能音箱、耳机。<strong>暂未纳入医疗终端 / 工业终端 / 教育终端</strong>——下一批 N 是潜在赛道窗口。<a class="inline-src" href="https://finance.sina.com.cn/roll/2026-05-08/doc-inhxewcz2179608.shtml">新浪</a></div>
+        <div class="news-title"><span class="tag tag-ai">资本</span><a href="https://wallstreetcn.com/articles/3763622">Google 以 3800 亿估值向 Anthropic 投入最高 400 亿，OpenAI 同步解除微软独家</a></div>
+        <div class="news-body"><strong>本周最大资本结构变化：</strong>Google 单笔向 Anthropic 注入最高 <strong>400 亿美元</strong>（100 亿立即到账），以 3800 亿估值入股；OpenAI 同步解除对微软的独家授权，向所有云厂商开放模型 IP（许可期至 2032，微软仍保留 20% 收入分成至 2030）。AI 算力供给侧从"双寡头"切换到"<strong>多极联盟 + 开放底</strong>"——B 端采购"多家可替换"从口号变合同条款。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">02</div>
       <div>
-        <div class="news-title"><span class="tag tag-ai">大厂</span><a href="https://finance.sina.com.cn/stock/relnews/hk/2026-05-08/doc-inhxcusr4603771.shtml">阿里 / 腾讯 5/13 同日发 Q1 财报，AI 云业务成估值核心变量</a></div>
-        <div class="news-body">阿里 / 腾讯将于下周二同日披露财报。<strong>阿里云收入增速预期 40%+</strong>，腾讯营收预期同比 +9.6%–12.4%。市场对 2026 年中国互联网叙事的核心已从"<strong>用户增长</strong>"切换到"<strong>AI 云业务的可量化兑现</strong>"——会议简报中"我们的 AI 业务今年贡献 X 亿"开始成为分析师必问题。</div>
+        <div class="news-title"><span class="tag tag-ai">商业化</span><a href="https://www.huxiu.com/article/4855889.html">ChatGPT 广告主平台 5/6 正式上线：Ads Manager 测试版，最低门槛降至 5 万美金</a></div>
+        <div class="news-body"><strong>商业化里程碑：</strong>OpenAI 5 月 6 日正式向企业开放 ChatGPT 广告管理工具，<strong>门槛从 25 万美金降至 5 万美金</strong>，CPM $60 / CPC $3-5（Meta 同类约 3 倍价）。预测：2026 全年广告营收 24 亿、2027 接近 110 亿、2030 突破 1000 亿成第一收入源。9 亿周活中 94% 为免费用户，广告以"Sponsored 模块 + 上下文动态"形式呈现。<strong>"AI 入口"开始变现，PR 信息也将进入 prompt 内嵌广告时代</strong>。<a class="inline-src" href="https://36kr.com/p/3777649919095560">36 氪 · 价格腰斩</a></div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">03</div>
       <div>
-        <div class="news-title"><span class="tag tag-ai">大厂</span><a href="https://wallstreetcn.com/articles/3763622">字节跳动豆包 MAU 3.45 亿、阿里千问第二：国内 AI 入口战进入"双雄阶段"</a></div>
-        <div class="news-body">2026 年 Q1 国内 AI 应用 MAU 排名：<strong>豆包 ~3.45 亿</strong>（字节）领跑、千问（阿里）紧随其后但规模约为豆包一半、Kimi / 智谱清言 / DeepSeek 处于第三梯队。同期字节 2026 年资本支出预算 <strong>1600 亿元</strong>（超半数用于 AI 处理器与数据中心）、阿里 2025 年资本支出已破千亿、腾讯 792 亿。"<strong>AI 入口</strong>"三个字成为新 BAT 排序依据。<a class="inline-src" href="https://www.chinaflashmarket.com/a/183475">CFM</a></div>
+        <div class="news-title"><span class="tag tag-ai">国产模型</span><a href="https://m.thepaper.cn/newsDetail_forward_33096657">豆包官宣付费订阅：日均 Token 突破 120 万亿，三个月翻倍、两年增 1000 倍</a></div>
+        <div class="news-body">字节豆包 5 月初宣布新增付费订阅（68 元/月），主打"生产力场景"。底层数据：<strong>日均 Token 已破 120 万亿</strong>，过去三个月增一倍，比 2024 年 5 月发布时增长 1000 倍。同期 DeepSeek V4-Pro API 限时 2.5 折、缓存命中价降至 1/10；通义千问 27B 稠密多模态在编程基准全面超越 15 倍参数前代旗舰。"<strong>大模型免费时代结束</strong>"叙事在国内已成共识。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">04</div>
       <div>
-        <div class="news-title"><span class="tag tag-ai">Robotaxi</span><a href="https://finance.sina.com.cn/jjxw/2026-03-11/doc-inhqrrth2418715.shtml">文远知行 + 吉利远程 Robotaxi 2026 计划交付 2000 台，前装量产成主流</a></div>
-        <div class="news-body">"萝小文"三家国产 Robotaxi 全部进入前装量产阶段：<strong>文远知行 + 吉利远程 2026 年交付 2000 台</strong>、小马智行 + 丰田铂智 4X 国内一线城市投放千台、萝卜快跑覆盖 16 个国内城市并向迪拜 / 阿布扎比 / 欧洲扩张。<strong>小马智行第七代套件总成本较前代下降 70%</strong>，单车 BOM 已具备规模化经济性。Robotaxi 从 demo 进入"<strong>真量产</strong>"叙事的转折点出现在 2026 上半年。</div>
+        <div class="news-title"><span class="tag tag-ai">榜单</span><a href="https://juejin.cn/post/7637433660883763242">《时代》2026 全球十大 AI 公司：字节、智谱、阿里入选，中国 AI 三家进 TOP10</a></div>
+        <div class="news-body">本周《时代》杂志发布 2026 全球十大最具影响力 AI 公司榜单，<strong>字节跳动、智谱 AI、阿里巴巴入选</strong>，是国际媒体口径下"中国 AI 公司"被正式收录最高密度的一次。叙事框架由"追赶"切换为"<strong>多极</strong>"。中国 AI 公司 PR 团队建议本周内同步推动一次"中国 AI 故事"统一对外口径——避免"被收录"成为孤立事件。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">05</div>
       <div>
-        <div class="news-title"><span class="tag tag-ai">海外</span><a href="https://finance.sina.com.cn/stock/usstock/c/2026-05-08/doc-inhxckav4726620.shtml">OpenAI 与博通 1800 亿美元自研芯片项目首期融资遇冷，微软采购承诺尚未到位</a></div>
-        <div class="news-body">代号 "Nexus" 的 10 GW 完整项目，仅芯片成本就达 <strong>1800 亿美元</strong>。当前正在谈判的方案：博通为第一期 1.3 GW / 180 亿美元出资，但条件是<strong>微软承诺采购首批四成产能</strong>，微软至今未签字。这是 OpenAI"<strong>从 Token-as-a-Service 转向 Compute-as-a-Service</strong>"战略的第一道融资关卡——叠加 5/2 Anthropic 9000 亿融资洽谈，AI 行业头部估值正在分化。</div>
+        <div class="news-title"><span class="tag tag-ai">模型</span><a href="https://www.sohu.com/a/1018306020_122523043">GPT-5.5 Instant + Claude Opus 4.7 同期上线：医疗法律金融幻觉率 -52.5%</a></div>
+        <div class="news-body">OpenAI 5 月推出 <strong>GPT-5.5 Instant</strong>，医疗、法律、金融类问题幻觉率较上一版下降 <strong>52.5%</strong>；Anthropic <strong>Claude Opus 4.7</strong> 在编程任务中幻觉降智更少、Computer Use 任务完成度 <strong>72.5%</strong>。两家"<strong>幻觉率 = KPI</strong>"的对外叙事正成为 B 端采购侧的标准评估字段——金融、医疗、法律类客户的 Q2 IR/合规话术建议加入"AI 幻觉率"作为可披露指标。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">06</div>
       <div>
-        <div class="news-title"><span class="tag tag-ai">Robotaxi</span><a href="https://nev.ofweek.com/2025-12/ART-77015-8400-30677159.html">萝卜快跑覆盖 16 个国内城市 + 中东迪拜 / 阿布扎比 + 与 Uber/Lyft 战略合作</a></div>
-        <div class="news-body">百度萝卜快跑国内覆盖北京 / 上海 / 深圳 / 武汉 / 重庆等 16 个城市，海外进驻迪拜、阿布扎比路测，与 Uber/Lyft 达成战略合作，计划向中东、亚洲、欧洲进军。<strong>"国内运营 + 海外路测 + 国际平台合作"三件套</strong>已成为国产 Robotaxi 出海标准模板。对汽车 / 出行 / 智慧城市 / 自动驾驶供应链客户的 PR 而言，"<strong>Robotaxi 出海</strong>"叙事在 2026 年下半年将正式进入营销主流。</div>
+        <div class="news-title"><span class="tag tag-ai">Robotaxi</span><a href="https://www.qbitai.com/2026/02/382914.html">Robotaxi 商业化加速：文远 2026 年交付 2000 台、小马第七代套件成本降 70%</a></div>
+        <div class="news-body">本周 Robotaxi 主线两条硬数据：<strong>文远知行</strong>与吉利远程深化合作、目标 2026 交付 <strong>2000 台前装量产 Robotaxi</strong>；<strong>小马智行</strong>第七代自动驾驶套件总成本降 70%（车载计算 -80%、激光雷达 -68%），目标车型售价压到 10–15 万元级别。<strong>1 月数据</strong>：文远车队 1023 辆、小马 1159 辆，广州日均已达 23 单 / 辆——"<strong>单车经济模型</strong>"首次走通。汽车、保险、城市 PR 团队建议把 Robotaxi 列入 Q2 BD 与品牌话题清单。<a class="inline-src" href="https://www.cls.cn/detail/2117876">财联社 · 政策再推</a></div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">07</div>
       <div>
-        <div class="news-title"><span class="tag tag-ai">榜单</span><a href="https://finance.sina.com.cn/wm/2026-04-28/doc-inhwapmv1458528.shtml">智谱、阿里、字节入选《时代周刊》"2026 全球十大最具影响力 AI 公司"</a></div>
-        <div class="news-body">三家中国 AI 公司同时入选《时代周刊》榜单：<strong>智谱、阿里、字节</strong>。这是中国 AI 生态首次在全球权威榜单中以"<strong>三家并列</strong>"格局亮相，叙事意义大于商业意义——意味着海外媒体不再以"中国版 OpenAI"模板单点叙事，而是接受了"中国 AI = 多极生态"的事实。建议有海外业务的中国 AI 公司本周更新 Wikipedia / Crunchbase / TechCrunch 公司词条，及时挂上《时代周刊》入选事实。</div>
+        <div class="news-title"><span class="tag tag-ai">硬件</span><a href="https://m.cls.cn/detail/2300585">MWC 2026 复盘：AI 眼镜成绝对焦点，科大讯飞 40g 全球最轻双目智能眼镜</a></div>
+        <div class="news-body">本周 AI 硬件叙事仍由 3 月 MWC 发布的产品延续发酵：<strong>科大讯飞 AI 眼镜重 40g</strong>（全球最轻双目单色多模态）、<strong>XREAL × Google Project Aura</strong>（深度融合 Android XR + Gemini）、<strong>Rokid 49g 全功能 AI+AR 眼镜</strong>、<strong>微光科技玄景 M6</strong>（首款硬件可持续升级全彩 AI 眼镜）。"<strong>AI 从数字世界走向物理世界</strong>"的叙事在二级市场已对应到立讯、舜宇、领益智造三家产业链龙头。<a class="inline-src" href="https://www.vrtuoluo.cn/545152.html">VR 陀螺 · 2026 AI 眼镜盘点</a></div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">08</div>
       <div>
-        <div class="news-title"><span class="tag tag-ai">硬件</span><a href="https://wearable.ofweek.com/2026-01/ART-8110-5000-30678348.html">国内 AI 眼镜 2026 年井喷：阿里夸克 S1 / 雷鸟 V3 / INMO AIR3 / 极米 Memo One</a></div>
-        <div class="news-body">2026 年成为国内 AI 智能眼镜"井喷年"，主要新品：<strong>阿里夸克 AI 眼镜 S1</strong>（CES 2026 首发，旗下首款自研 AI 眼镜）、雷鸟创新 V3 AI 拍摄眼镜、影目 INMO AIR3 + INMO GO3、极米 Memo One（首款 Micro LED 双目显示 AI 眼镜）、微光全球首款模块化全彩 AR 智能眼镜。今日 GB/Z 177—2026 国标已把"智能眼镜"列入首批 N 类，<strong>"L3 辅助级 / L4 协同级"成为 AI 眼镜新的卖点字段</strong>。</div>
+        <div class="news-title"><span class="tag tag-ai">大厂</span><a href="https://m.cbndata.com/information/295194">国内大厂 AI 入口争夺：豆包稳第一、千问差异化、腾讯元宝坐等微信发力</a></div>
+        <div class="news-body">2026 年中国 AI 入口战格局：<strong>豆包</strong>凭字节系内容生态稳第一，<strong>通义千问</strong>靠阿里电商 + 支付闭环差异化，<strong>腾讯元宝</strong>坐拥微信社交链但尚未完全发力。互联网大厂市值座次：腾讯 7287 亿稳居第一、阿里 3516 亿第二、拼多多 1616 亿第三。"<strong>AT 双雄并立 + 拼多多锁定第三极</strong>"是 2026 上半年的稳态结构。</div>
       </div>
     </li>
   </ol>
@@ -620,63 +633,56 @@
 <section id="social">
   <div class="section-head">
     <h2><span class="cn">社会热点</span><span class="en">/ Social</span></h2>
-    <div class="section-meta">7 条 · 今日</div>
+    <div class="section-meta">6 条 · 本周复盘</div>
   </div>
 
   <ol class="news-list">
     <li class="news-item">
       <div class="num">01</div>
       <div>
-        <div class="news-title"><a href="https://www.chinanews.com.cn/gn/2026/05-08/10617278.shtml">最高法发布 5 起侵犯公民个人信息典型案例：医疗系统 / 铁路系统"内鬼"案双双入选</a></div>
-        <div class="news-body"><strong>合规事件展开：</strong>最高法今日发布 5 起典型案例，重点惩处行业"内鬼"。<strong>医疗"内鬼"案</strong>：博某软件公司在为医院开发挂号系统过程中，法定代表人何某某安排员工将患者数据自动导入自建数据库；<strong>铁路"内鬼"案</strong>：被告人陈某某利用车站客运员职务便利查询并出售公民乘车信息，判刑 9 个月至 3 年 8 个月不等并支付公益损害赔偿金 + 公开赔礼道歉。对医疗 AI / 出行 / 票务 / SaaS 客户的合规叙事是直接信号：<strong>"数据脱敏 + 第三方审计 + 公开承诺"</strong>从今日起需要被纳入年度披露物料。</div>
+        <div class="news-title"><a href="https://www.mem.gov.cn/xw/yjyw/202605/t20260508_602865.shtml">浏阳烟花厂"5·4"特别重大事故：37 死 1 失踪，国务院调查组第一次全体会议</a></div>
+        <div class="news-body"><strong>危机响应样本：</strong>事故发生 4 天后国务院级调查组第一次全会召开，由应急管理部部长亲自挂帅；湖南省同步召开省委调度会；湖南省内烟花爆竹企业全面停产整顿。<strong>"事实 + 问题 + 责任"三层口径 + "四不放过"原则</strong>是 2026 年首例完整工业事故应急响应模板。涉事企业系外贸厂商，3 个月前曾受过处罚——"<strong>历史合规记录</strong>"重新成为 ESG/社会责任侧的 PR 风险锚点。<a class="inline-src" href="https://www.jiemian.com/article/14383847.html">界面 · 26 死 61 伤前期数据</a></div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">02</div>
       <div>
-        <div class="news-title"><a href="https://finance.sina.com.cn/roll/2026-05-08/doc-inhxewcz2179608.shtml">人工智能终端智能化分级国家标准发布，工信部召开宣贯会</a></div>
-        <div class="news-body">GB/Z 177—2026 系列国标 + 宣贯会同日落地。央广 / 央视 / 新华 / 中新 / IT 之家等多家媒体头版头条覆盖。这是 2026 年继 4/22 节能降碳意见之后第二个国家级 AI 主叙事。建议消费电子 / 智能家电 / 智能眼镜 / 汽车 / 智能音箱客户本周完成 L1–L4 自评以备销售物料合规审查。</div>
+        <div class="news-title"><a href="https://sputniknews.cn/20260509/1071164969.html">5/9 莫斯科胜利日阅兵看点：中国驻俄使馆代表受邀出席</a></div>
+        <div class="news-body">5 月 9 日莫斯科红场举行胜利日阅兵，<strong>中国驻俄罗斯使馆代表受邀出席</strong>。同日卫星社推出"步兵经典：从波波沙-41 到 AK-12""北约的未来自冷战以来从未如此不确定"两条议题——俄乌博弈进入新一轮舆论场。涉俄、涉地缘业务的国际品牌建议本周完成<strong>官网 / DEI 页面 / 客户公告</strong>"地区话术"扫描，避免被卷入二次发酵。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">03</div>
       <div>
-        <div class="news-title"><a href="https://sputniknews.cn/20260508/1071140182.html">媒体：特朗普访华将邀请英伟达 / 苹果 / 埃克森美孚 CEO 随行</a></div>
-        <div class="news-body">据多家媒体披露，特朗普即将访华，<strong>计划邀请英伟达、苹果、埃克森美孚等大型企业 CEO 随行</strong>，议题为贸易关系与投资。这是 2026 年最受关注的"商业访问"——若成行，将是中美科技 / 能源行业品牌叙事的重大事件，建议有相关业务的中外企业 PR 本周做"<strong>访华前后议题"沙盘推演</strong>。</div>
+        <div class="news-title"><a href="https://www.stcn.com/article/detail/3900052.html">外交部"中国的发展从来不是谁的威胁"：5/8 例行表态，下一步贸易谈判窗口</a></div>
+        <div class="news-body">外交部 5 月 8 日例行表态"中国的发展从来不是谁的威胁"，是<strong>下一轮中美贸易谈判窗口</strong>的标准化口径。同日财政部、证监会放行内地两家会所赴港做 H 股审计，监管 + 外交两条线协同信号增强。涉海外业务、出口、跨境互联网客户建议在<strong>下周路演 deck 中加入"中国发展叙事"统一段落</strong>，避免地缘话术与业务话术分离。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">04</div>
       <div>
-        <div class="news-title"><a href="https://sputniknews.cn/20260508/1071156359.html">伊朗媒体：美军在伊朗南部袭击一艘民船，10 名海员受伤、5 人失踪</a></div>
-        <div class="news-body">伊朗南部水域民船遭袭，事件背景与霍尔木兹海峡重开提议谈判同时发生。<strong>"地缘扰动 + 高位油价 + 美伊谈判"</strong>三线并行的复杂格局短期内不会缓解。航运、保险、能源、跨境物流客户的应急话术应保持随时启用状态。</div>
+        <div class="news-title"><a href="https://m.thepaper.cn/newsDetail_forward_33104014">浏阳烟花产业反思：单产业占地方 GDP 接近 1/3，整顿期长尾影响开始显现</a></div>
+        <div class="news-body">澎湃《烟花爆竹产业，对浏阳究竟有多重要？》：<strong>烟花爆竹单一产业接近浏阳地方 GDP 的 1/3</strong>，全面停产整顿带来的就业、出口、税收影响进入舆论视野。<strong>"单一支柱产业 + 安全风险"</strong>是 2026 中国地方经济叙事新的争议点。地方招商、文旅、出口贸易类客户在本周内不宜推"<strong>烟花文化 IP</strong>"相关营销。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">05</div>
       <div>
-        <div class="news-title"><a href="https://sputniknews.cn/20260508/1071155347.html">欧盟委员会主席称在降低美国关税方面"取得进展"</a></div>
-        <div class="news-body">在美国国际贸易法院 5/7 裁定 10% 关税违法之后，欧盟主席就降低对美关税表态"取得进展"。这是<strong>美欧关税博弈进入新窗口</strong>的信号——欧洲业务比例较高的中国出口客户可关注后续是否出现"借美欧降关税顺势减税"的间接利好。</div>
+        <div class="news-title"><a href="https://m.civiw.com/opinion/20260320172852234">2026 品牌舆情新风险：从单一产品争议升级为"行为—价值"一致性审视</a></div>
+        <div class="news-body">本周公关行业研究指出，<strong>2026 品牌舆情风险从单一产品争议升级为"行为—价值"一致性审视</strong>，内部信息外溢、多线程危机叠加成新特征。"<strong>2025 始祖鸟烟花事件 + 2026 我的万物集暴雷</strong>"两个样本为模板。所有品牌 PR 建议在 Q2 内更新一次<strong>"价值观一致性 audit"清单</strong>：员工 / 内部沟通 / 供应商 / 渠道 / 产品 / 营销 / ESG 七层是否口径统一。<a class="inline-src" href="https://36kr.com/p/3726563244423557">36 氪 · 我的万物集</a></div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">06</div>
       <div>
-        <div class="news-title"><a href="https://m.thepaper.cn/newsDetail_forward_33125085">澎湃 5/8 AI 晚新闻：监管侧多动作 + AI 终端国标 + 阿里 / 腾讯财报预热</a></div>
-        <div class="news-body">澎湃今日 AI 晚新闻汇总：AI 终端国标 GB/Z 177—2026 发布、最高法个人信息典型案例、阿里腾讯财报窗口、特斯拉 Optimus 进展、英伟达 5 万亿市值。<strong>"政策 + 业绩 + 算力"三线在同一周共振</strong>是 2026 年 Q2 中国 AI 叙事的标志性窗口。</div>
-      </div>
-    </li>
-    <li class="news-item">
-      <div class="num">07</div>
-      <div>
-        <div class="news-title"><a href="https://sputniknews.cn/20260508/1071156027.html">美国务卿：解决乌克兰冲突的工作"停滞不前"，泽连斯基或寻新窗口</a></div>
-        <div class="news-body">美国务卿表态"乌克兰停火工作停滞"，叠加俄美继续磋商但无进展、欧美关税缓和但 AI / 能源博弈持续——<strong>2026 年 Q2 全球地缘"小步缓和 + 局部紧张"</strong>的混合状态延续。建议有跨境业务的客户在月度 IR 简报中加入"<strong>地缘场景假设</strong>"模块。</div>
+        <div class="news-title"><a href="http://www.news.cn/">中央气象台 5/9 海洋天气公报：东部和南部海域将有 6~7 级风</a></div>
+        <div class="news-body">5 月 9 日中央气象台发布海洋天气公报，<strong>东部和南部海域将有 6~7 级风</strong>。航运、港口、海洋油气、滨海旅游四类客户在本周末需启动"<strong>恶劣天气应急 + 客户告知</strong>"模板——这是 2026 进入主汛期前最后一次平稳的天气窗口；下周起需把"<strong>气象 + 应急</strong>"列入日常 PR 节奏。</div>
       </div>
     </li>
   </ol>
 </section>
 
-<!-- ============ WEIBO TOP 10 (pending data source) ============ -->
+<!-- ============ WEIBO TOP 10 (placeholder) ============ -->
 <section id="weibo">
   <div class="section-head">
     <h2><span class="cn">微博热搜</span><span class="en">/ Weibo Top 10</span></h2>
@@ -686,8 +692,8 @@
   <div class="weibo" style="background:#fbf6ea;border:1px dashed var(--claude);">
     <p class="note" style="color:var(--claude-deep);font-style:normal;font-size:14px;line-height:1.8">
       <strong>⚠ 本模块暂缺真实热搜词数据。</strong><br>
-      沙盒环境无法直连微博实时热搜（<code style="background:#fff;padding:1px 6px;border-radius:2px">s.weibo.com/top/summary</code> 需登录 Cookie、第三方聚合 API 需 key、镜像站被代理拦截）。为避免把"新闻事件"误报为"真实热搜词"，本期仍保留占位。<br><br>
-      今日周边可见话题（来源为新闻聚合，非官方热搜榜单，仅作 <em>sanity check</em>）：AI 终端国标发布、最高法个人信息"内鬼"案、特朗普访华企业随行、阿里腾讯财报预热、大普微涨 10 倍、伊朗南部民船被袭、美 4 月非农 11.5 万、Robotaxi 量产。完整 TOP10 请临时查阅<a href="https://s.weibo.com/top/summary" style="color:var(--claude-deep);text-decoration:none;border-bottom:1px dotted var(--claude)">新浪官方热搜榜</a>或<a href="https://www.weibotop.cn/2.0/" style="color:var(--claude-deep);text-decoration:none;border-bottom:1px dotted var(--claude)">热搜时光机</a>。
+      沙盒环境无法直连微博实时热搜（<code style="background:#fff;padding:1px 6px;border-radius:2px">s.weibo.com/top/summary</code> 需登录 Cookie、第三方聚合 API 需 key、镜像站被代理拦截）。为避免把"新闻事件"误报为"真实热搜词"，本期保留占位。<br><br>
+      今日周边可见话题（来源为新闻聚合，非官方热搜榜单，仅作 <em>sanity check</em>）：浏阳烟花厂调查组、莫斯科胜利日阅兵、A 股商业航天 + 人形机器人爆发、Google 400 亿入股 Anthropic、ChatGPT 广告平台上线、《时代》2026 AI 十强榜、新势力 4 月销量。完整 TOP10 请临时查阅<a href="https://s.weibo.com/top/summary" style="color:var(--claude-deep);text-decoration:none;border-bottom:1px dotted var(--claude)">新浪官方热搜榜</a>或<a href="https://www.weibotop.cn/2.0/" style="color:var(--claude-deep);text-decoration:none;border-bottom:1px dotted var(--claude)">热搜时光机</a>。
     </p>
   </div>
 </section>
@@ -696,25 +702,25 @@
 <section id="pr">
   <div class="section-head">
     <h2><span class="cn">PR 视角</span><span class="en">/ Takeaway</span></h2>
-    <div class="section-meta">今日 · 可直接写入本周简报</div>
+    <div class="section-meta">本周末 · 可直接写入下周 PR 简报</div>
   </div>
 
   <div class="takeaway-box">
-    <div class="label">Three Insights for Today</div>
-    <h3>三条可直接写入本周 PR 简报的洞察</h3>
+    <div class="label">Three Insights for the Week</div>
+    <h3>三条可直接写入下周 PR 简报的洞察</h3>
     <ol>
-      <li><strong>AI 终端国标 GB/Z 177—2026 把"AI 化"从营销话术升级为合规话术：</strong>L1 响应级 → L4 协同级的国标定级在今日落地，意味着任何在产品发布会或官网宣称"AI 助手 / AI 协作"的厂商，从今天起都要面对"<strong>L 级别可被国标证伪</strong>"的合规审视。建议手机 / 智能眼镜 / 智能音箱 / 汽车 / 耳机五类品牌本周完成三件事：<strong>现有 AI 产品按国标自评、官网话术对齐 L 级、销售物料合规审查</strong>。同时医疗 / 教育 / 工业 / 金融四类终端虽未纳入首批 N，但可主动以"<strong>建议纳入下一批 N</strong>"为题做政策建言型 PR，把"暂未被覆盖"转化为"政策建言者"标签。</li>
-      <li><strong>"OpenAI 一极独霸"叙事正在分化为多极格局，国内 AI 客户的合作方表述需要立刻升级：</strong>5/8 OpenAI / 博通 1800 亿芯片项目融资遇冷，叠加 5/2 Anthropic 9000 亿融资洽谈、4/27 英伟达 5.26 万亿峰值、5/6 三星 / SK 海力士跻身万亿俱乐部——AI 头部估值正在快速分化为"<strong>英伟达 + Anthropic + 韩国存储双雄 + Google + 国内三家</strong>"的多极结构。任何在国内 PR 物料中以"<strong>已接入 OpenAI</strong>"为单点宣传卖点的客户，本周需立即升级为"<strong>多模型 / 多供应商组合</strong>"叙事，避免被动绑定到一个估值面正在被重新定价的合作方。同期智谱 / 阿里 / 字节入选《时代周刊》榜单也提供了"国内三家可单独被引用"的新素材。</li>
-      <li><strong>医疗"内鬼"案 + AI 终端国标同日落地，把"数据合规"推到 PR 战略最优先级：</strong>最高法医疗系统外包公司"内鬼"窃取患者数据案位列今日典型案例，意味着监管侧已经把"<strong>外包链路 + 数据脱敏路径 + 内部权限</strong>"明确纳入刑事审视范畴。对医疗 AI / 数字健康 / SaaS / 出行 / 票务客户而言，2026 下半年的危机预防核心从"<strong>对外发声管理</strong>"前移到"<strong>对内数据治理白皮书</strong>"。建议本周内启动三件事：<strong>外包合作方数据访问权限审计、对外发布的数据治理白皮书草拟、IR 沟通模板加入"数据合规承诺"必填段落</strong>——这三步动作越早完成，越能在下一轮"内鬼"舆情爆发时占据"提前合规"的高地。</li>
+      <li><strong>"AI 合作伙伴"叙事进入"<em>多供应方 + 数据主权</em>"时代：</strong>本周 Google 400 亿入股 Anthropic + OpenAI 解除微软独家两件事叠加，意味着 AI 算力 / 模型供给侧从"双寡头"切换到"<strong>多极联盟 + 开放底</strong>"。所有上市公司财报电话、官网 trust page、IR 路演 deck 中"AI 合作伙伴"段落需要在 Q2 内重写一次：<strong>"独家"和"战略合作"两个词的法律含义在 2026 年市场预期里已贬值；"多供应方 + 数据主权"成为新可信叙事单位</strong>。同时 ChatGPT 广告平台 5/6 正式上线、豆包推出付费订阅—— PR 信息也将进入"prompt 内嵌广告 + 模型订阅"的新分发渠道，提前规划"<strong>AI native 内容投放</strong>"成为下半年品牌侧的关键议程。</li>
+      <li><strong>危机响应模板由"48 小时规则"进化为"<em>事实 + 问题 + 责任</em>"三层口径：</strong>浏阳烟花厂事故（37 死 1 失踪）国务院级调查组在 4 天内召开第一次全会、湖南省同步停产整顿——<strong>"事实查清楚 + 问题查清楚 + 责任查清楚"三层结构 + "四不放过"原则</strong>是 2026 年首例完整工业事故应急响应模板。涉事企业系外贸厂商 + 3 个月前曾受处罚的"历史合规记录"再次回潮，提示所有 ESG / 安全 / 重资产客户 Q2 内必须完成"历史合规记录的内部 audit + 公开口径统一"。同时 2026 品牌舆情风险已从"单一产品争议"升级到"<strong>行为 - 价值一致性审视</strong>"——员工 / 内部沟通 / 供应商 / 渠道 / 产品 / 营销 / ESG 七层口径必须同时通过审视。</li>
+      <li><strong>"<em>降息 + 降准 + 外资 + 时代杂志背书</em>"四重共振是中国品牌出海最好的窗口期：</strong>5/8 央行 MLF/LPR 同步下调、5/15 万亿降准接力、北向资金 10 日累计净流入超 450 亿、《时代》2026 AI 十强榜单字节 / 智谱 / 阿里入选——<strong>四件事在同一周内集中落地，是 2026 上半年最强的"中国资产 + 中国 AI"双叙事窗口</strong>。建议中国互联网医疗、AI、新能源车、智能硬件四类客户在下周（5/11–5/15）启动一次<strong>"中国故事统一对外口径"</strong>的协同发布——把"中国 AI 多极、中国资本回流、中国监管打通 H 股审计"三条新闻打包讲，比单独发声单条更有效。轻松健康（HK 2661）建议借此窗口蹭"中国 AI 医疗"叙事，而非硬怼算力主线。</li>
     </ol>
   </div>
 </section>
 
 <!-- ============ FOOTER ============ -->
 <footer>
-  <div class="brand">Gigi's Daily Digest · Generated 2026-05-09 · Vol.016 · 周末复盘</div>
-  <div>共 28 条资讯 · 公司自查 1 家（HK2661 · 观察期 Day 19 · 节后第六日 · 周六）· 来源 30+</div>
-  <div class="disclaimer">本简报为多源公开信息整合，不构成投资建议。今日（5/9 周六）A 股 / 港股休市，行情数据沿用最近交易日：A 股指数为 2026-05-08 收盘；美股指数为 2026-05-07 收盘；Brent 油价为 2026-05-07 行情。HK 2661 轻松健康 04-21 至 05-09 逐日权威行情仍处披露真空，仅可援引可公开核实的最近一次基准价（2026-04-20 收 60.4 港元）。微博热搜 TOP 10 模块因数据源限制暂以占位形式呈现。</div>
+  <div class="brand">Gigi's Daily Digest · Generated 2026-05-09 · Vol.016 · 周末复盘版</div>
+  <div>共 28 条资讯 · 公司自查 1 家（HK2661 · 观察期 Day 19）· 来源 30+</div>
+  <div class="disclaimer">本简报为多源公开信息整合，不构成投资建议。今日为周六非交易日，A 股指数显示为 2026-05-08 收盘数据；美股指数显示为 2026-05-08 收盘；油价取 2026-05-08 北京时间盘中报价；HK 2661 轻松健康 5 月份逐日股价 / 成交量数据真空仍未补齐，本期最新可核实正面叙事为 5/4 东方财富财富号"超跌修复开启估值重估"分析文章。微博热搜 TOP 10 模块因数据源限制暂以占位形式呈现。</div>
 </footer>
 
 </div>
