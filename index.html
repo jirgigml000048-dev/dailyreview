@@ -268,6 +268,33 @@
     font-size:12px; color:var(--ink-mute); margin-top:-8px; margin-bottom:16px;
     font-style:italic;
   }
+  .weibo ol{list-style:none; counter-reset:weibo}
+  .weibo li{
+    counter-increment:weibo; padding:10px 0;
+    border-bottom:1px dashed var(--line-soft);
+    display:grid; grid-template-columns:36px 1fr auto; gap:12px;
+    align-items:baseline;
+  }
+  .weibo li:last-child{border-bottom:none}
+  .weibo li::before{
+    content:counter(weibo,decimal-leading-zero);
+    font-family:"Source Serif 4",serif; font-weight:600;
+    color:var(--claude); font-size:15px;
+  }
+  .weibo li:nth-child(-n+3)::before{color:var(--claude-deep); font-weight:700}
+  .weibo .hot-title{font-size:15px; color:var(--ink); font-weight:500}
+  .weibo .hot-title a{color:inherit; text-decoration:none; border-bottom:1px solid transparent}
+  .weibo .hot-title a:hover{border-bottom-color:var(--claude)}
+  .weibo .hot-meta{
+    font-size:11px; color:var(--ink-mute); letter-spacing:0.5px;
+    font-variant-numeric:tabular-nums;
+  }
+  .weibo .hot-label{
+    display:inline-block; font-size:10px; padding:1px 6px;
+    background:var(--claude-soft); color:var(--claude-deep);
+    margin-left:6px; border-radius:2px; font-weight:600;
+    vertical-align:1px;
+  }
 
   /* ============ Takeaway ============ */
   .takeaway-box{
@@ -322,8 +349,8 @@
 <!-- ============ MASTHEAD ============ -->
 <header class="masthead">
   <div class="masthead-top">
-    <span>Gigi's Daily · Vol.025</span>
-    <span>2026 · 05 · 22 <span class="dot"></span> 周五 · 收盘后版</span>
+    <span>Gigi's Daily · Vol.024</span>
+    <span>2026 · 05 · 22 <span class="dot"></span> 周五 · 午后更新</span>
   </div>
   <h1 class="title">每日资讯 <span class="and serif">&amp;</span> 洞察</h1>
   <div class="subtitle">A digest for PR strategists and AI thinkers — 为 PR 从业者与 AI 爱好者整理</div>
@@ -339,32 +366,32 @@
     <div class="stat">
       <div class="label">上证指数</div>
       <div class="value">4106.26 <span class="delta up">+0.52%</span></div>
-      <div class="asof">05-22 收</div>
+      <div class="asof">05-22 午间</div>
     </div>
     <div class="stat">
       <div class="label">创业板指</div>
       <div class="value">3752.76 <span class="delta up">+1.73%</span></div>
-      <div class="asof">05-22 收</div>
+      <div class="asof">05-22 午间</div>
     </div>
     <div class="stat">
       <div class="label">深证成指</div>
       <div class="value">15177.29 <span class="delta up">+1.30%</span></div>
-      <div class="asof">05-22 收</div>
+      <div class="asof">05-22 午间</div>
+    </div>
+    <div class="stat">
+      <div class="label">道琼斯</div>
+      <div class="value">历史新高 <span class="delta up">+0.69%</span></div>
+      <div class="asof">05-21 美收</div>
     </div>
     <div class="stat">
       <div class="label">纳斯达克</div>
-      <div class="value">25870.71 <span class="delta down">-0.84%</span></div>
-      <div class="asof">05-19 收</div>
-    </div>
-    <div class="stat">
-      <div class="label">S&amp;P 500</div>
-      <div class="value">7353.61 <span class="delta down">-0.67%</span></div>
-      <div class="asof">05-19 收</div>
+      <div class="value">历史新高 <span class="delta up">再创新高</span></div>
+      <div class="asof">05-21 美收</div>
     </div>
     <div class="stat">
       <div class="label">HK 2661 · 轻松健康</div>
-      <div class="value">触底回升 <span class="delta up">区间企稳</span></div>
-      <div class="asof">5月中旬</div>
+      <div class="value">复盘期 <span class="delta up">月内 +70%</span></div>
+      <div class="asof">05-22 盘中</div>
     </div>
   </div>
 </header>
@@ -391,17 +418,17 @@
   </div>
 
   <div class="selfcheck">
-    <h3>轻松健康集团（02661.HK）· 当日追踪</h3>
-    <div class="subtitle-line">仅展示近 72 小时内的新动态——历史背景不再重复。05-22（今日）截至收盘暂无新增针对性报道；公司叙事已转向"循证医学智能体 + 新任 CFO + 估值修复"的正向框架。</div>
+    <h3>轻松健康集团（02661.HK）· 当日追踪 · 复盘期</h3>
+    <div class="subtitle-line">仅展示近 72 小时内的新动态——历史背景不再重复。今日（05-22）截至午间未采集到新增针对性报道，舆情已彻底脱离 4 月暴跌窗口，进入"产品里程碑 + 估值修复"叙事阶段。</div>
 
     <div class="grid">
       <!-- 正面 -->
       <div class="pos">
         <div class="label">正面 · 近 72h 新动态</div>
         <ul>
-          <li><strong>05-22（今日）</strong>：暂无新增针对性报道。A 股算力硬件、半导体板块今日全线拉升，CPO 涨幅居前，"AI + 健康"叙事在二级市场仍受追捧，有利于公司估值修复主线延续。</li>
-          <li><strong>05-19 至 05-20</strong>：中金在线、ITBear、中华网等多渠道同步刊发"<strong>新任 CFO 护航，超跌反弹开启估值修复</strong>"专题，二级市场已出现触底特征，公司开始从"危机叙事"切换到"估值修复叙事"。<a href="http://hy.stock.cnfol.com/hangyejingcui/20260520/32239803.shtml">中金在线</a></li>
-          <li><strong>5 月初</strong>：核心产品"证元芳"正式通过<strong>中国信通院医疗健康智能助手（MedClaw）专项评测</strong>，成为国内首个且目前唯一通过该认证的医疗健康 AI 助手，循证 Q&amp;A 与证据可溯源两项达到行业头部水平。<a href="https://www.itbear.com.cn/html/2026-05/1347969.html">ITBear · 估值修复</a></li>
+          <li><strong>05-22（今日）</strong>：暂无新增针对性报道。前两日的"<strong>MedClaw 国家级认证 + 新任 CFO 到位</strong>"双利好仍在二级市场被持续定价，月内累计涨幅约 +70% 的话题在港股 AI 医疗板块继续发酵。</li>
+          <li><strong>05-19</strong>：核心产品"证元芳"正式通过中国信通院医疗健康智能助手（<strong>MedClaw</strong>）专项评测——国内<strong>首个且目前唯一</strong>通过该认证的医疗健康智能助手。<a href="https://hea.china.com/articles/20260519/202605191872776.html">中华网 · MedClaw</a></li>
+          <li><strong>05-19</strong>：新任 CFO 到位 + 多家券商发买入评级。估值修复逻辑形成"<strong>基本面 + 治理 + 监管认可</strong>"三重共振。<a href="https://www.itbear.com.cn/html/2026-05/1347969.html">ITBear · 估值修复</a></li>
         </ul>
       </div>
 
@@ -409,15 +436,15 @@
       <div class="neg">
         <div class="label">负面 · 近 72h 新动态</div>
         <ul>
-          <li><strong>05-22（今日）</strong>：暂无新增负面报道。"4·20 暴跌"相关词条已基本退出主流财经聚合页面首屏，舆情进入"估值修复期"。</li>
-          <li><strong>提示</strong>：港股层面具体逐日行情数据沙盒环境无法稳定核实——若今日有公告或异动，请以港交所披露易（HKEXnews）为准。<a href="https://hk.stockstar.com/hshare/02661">证券之星 · HK2661</a></li>
-          <li><strong>结构性风险</strong>：PS 估值已属"<strong>单位数</strong>"，对标海外循证 AI 标的（OpenEvidence 等）仍有空间；但若证元芳的<strong>付费用户数据、合作医院数据、API 调用数据</strong>不能在 2026 中期前给出可量化披露，"估值修复"叙事会面临二次回撤。<a href="https://stcn.com/article/detail/3675474.html">证券时报 · 券商推荐</a></li>
+          <li><strong>05-22（今日）</strong>：暂无新增负面报道。月内 70% 涨幅引发部分自媒体"<strong>反弹过热</strong>"质疑，但未形成集中负面叙事；须留意若本周创业板 / 恒科冲高回落，是否触发跟随性卖压。</li>
+          <li><strong>05-21</strong>：A 股全天大跌 -2.04%，恒生科技同步走弱；轻松健康因前日强势上涨吸引部分获利盘短线兑现，但收盘未跌破前一交易日开盘价。</li>
+          <li><strong>近 30 天回看</strong>：4 月 20 日"上市即见顶"标签在部分港股自媒体复盘文中仍偶有出现，但传播度大幅下降，已不构成主动议程。<a href="https://caifuhao.eastmoney.com/news/20260421104809384338000">东方财富 · 误读复盘</a></li>
         </ul>
       </div>
     </div>
 
     <div class="takeaway">
-      <strong>PR 自查建议（5/22 收盘版）：</strong>叙事窗口已经从"危机后静默"切换到"<strong>主动讲故事</strong>"。建议本月内对外推送一次<strong>有数据的</strong> "证元芳"季度更新——例如<strong>覆盖医院数、月度 API 调用、副主任医师以上覆盖率（已披露为 52%+）</strong>三个硬指标。可以借势国内大模型行业向<strong>"场景价值交付"</strong>切换的主线（字节、阿里、智谱均在 5 月密集发布场景化智能体），把公司定位为"<strong>医疗垂直场景智能体</strong>"而非泛 AI 概念股，规避后续 AI 估值波动的连带风险。
+      <strong>PR 自查建议（复盘期·新窗口）：</strong>叙事窗口已切换——前期"沉默 + 等待消化"的防守姿态可以收档。下一步应在本周内主动配合两个利好做<strong>有节奏的二次曝光</strong>：（1）以 <strong>MedClaw 国家级认证</strong>为锚，输出 1 篇产品深度稿（合规价值、副主任以上医师覆盖 52%+、与医保规则库打通），定位 toB 客户决策者；（2）以<strong>新任 CFO 到位</strong>为锚，安排一次 IR 投资者沟通会，把 2025 全年 12.56 亿营收（同比 +32.9%）与 AI 业务盈利拐点叙事打包。注意：<strong>不要再回头解释 4 月暴跌</strong>——任何"主动澄清"都可能把已经平息的旧议程再激活一次。
     </div>
   </div>
 </section>
@@ -430,41 +457,42 @@
   </div>
 
   <div class="deepdive">
+    <div class="kicker">头条 · A股算力链</div>
+    <h3><a href="https://finance.sina.com.cn/tech/roll/2026-05-22/doc-inhytyyn8495998.html">A 股周五"V 型逆袭"：CPO、PCB、铜缆全线爆发，创业板午盘领涨 +1.73%</a></h3>
+    <p>5 月 22 日，A 股延续昨日（5/21 -2.04%）大跌后的反弹剧本，但比"反弹"更值得关注的是<strong>结构</strong>：沪深双双高开后没有靠权重股拉指数，而是<strong>算力链整体接棒芯片板块成为新的资金核心</strong>。午间收盘：上证 4106.26（+0.52%）、深成 15177.29（+1.30%）、创业板 3752.76（+1.73%）；两市涨停 67 只、跌停仅 5 只，绿盘个股比例三成出头。<a class="inline-src" href="https://finance.sina.com.cn/stock/y/2026-05-22/doc-inhytqkv7733513.shtml">新浪 · 头版精华</a></p>
+    <p>这是 2026 年以来 A 股第一次出现 <strong>CPO + PCB + 铜缆高速连接</strong> 同步涨停潮——前期领涨的存储、HBM、CXL 等"芯片大类"主线短暂休整，资金顺势切到"连接 + 互联"的下一层。意味着市场对 AI 算力的定价逻辑正在从"<strong>芯片本身</strong>"过渡到"<strong>把芯片连起来的全套基础设施</strong>"，是更纵深、也更晚熟的产业链环节。</p>
+    <p>对 PR 端影响：通信、光通信、连接器、铜缆、PCB 类客户的 Q2 / Q3 messaging 应主动跟上——"AI 算力底座"这个表述今天已经不再独属于 GPU/HBM 公司，整个连接产业链都可以使用。但叙事必须配上<strong>客户名单 + 订单可见度</strong>等可量化锚点，否则与 4 月份的"光模块神话"叙事难以差异化。</p>
+    <div class="sources">
+      <strong>延伸阅读：</strong>
+      <a href="https://finance.sina.com.cn/stock/y/2026-05-22/doc-inhytqkv7733513.shtml">新浪 · 四大证券报头版</a>
+      <a href="https://finance.sina.com.cn/stock/s/2026-05-22/doc-inhytqks8551600.shtml">新浪 · 股海导航</a>
+      <a href="https://www.stcn.com/article/detail/3870505.html">证券时报 · 全线爆发</a>
+    </div>
+  </div>
+
+  <div class="deepdive">
     <div class="kicker">头条 · 国内 AI</div>
-    <h3><a href="https://finance.sina.com.cn/jjxw/2026-05-22/doc-inhytust7711306.shtml">智谱 GLM-5.1 高速版今日发布：输出 400 tokens/s，刷新全球大模型 API 速度上限</a></h3>
-    <p>5 月 22 日，智谱面向部分企业客户开放 <strong>GLM-5.1-highspeed</strong> 高速版 API，输出速度达 <strong>400 tokens/s</strong>，刷新当前全球大模型厂商 API 的速度天花板。这是 4 月 8 日 GLM-5.1 开源版本（华为云首发、昇腾算力上 Layer 级 MoE 绝对均衡、SWE-Bench Pro 上首次国产模型超 Opus 4.6）之后，智谱在 6 周内完成的第二次重大商业化迭代。</p>
-    <p>同日 A 股工业软件、CPO、半导体板块全线拉升，工业软件 ETF 博时（159108）盘中涨超 2%，东山精密、长光华芯涨停创历史新高，工业富联触及涨停。这是 2026 年 5 月以来 A 股第一次出现"<strong>国产大模型新版本发布 + 算力硬件直接共振</strong>"的二级定价反馈——意味着"国产 AI 主线"已经具备<strong>"事件驱动一日内联动"</strong>的成熟度。</p>
-    <p>对 PR 端的直接影响：国内 AI 厂商 messaging 模板正在从"参数竞赛"切到"<strong>吞吐量 / 延迟 / 单位成本</strong>"三件套——所有客户的 AI 合作方对外口径都建议参照这套新框架重写一遍。"我们用的是 X 模型"已经不够，要补一句"<strong>推理延迟低于 X 毫秒 / 单位 token 成本 X 分</strong>"。</p>
+    <h3><a href="https://www.eet-china.com/mp/a491180.html">字节 / 腾讯 / 阿里联手抢购华为昇腾 950：DeepSeek-V4 触发"<strong>国产卡需求挤兑</strong>"</a></h3>
+    <p>据知情人士透露，<strong>字节跳动、腾讯、阿里巴巴</strong>三大互联网巨头近日同时与华为接洽新增 AI 芯片采购订单，目标为<strong>昇腾 950 系列</strong>。直接触发点是 DeepSeek-V4 正式发布后引发的<strong>国产卡需求挤兑</strong>——V4 系列已在国产算力栈上跑通"训练 → 推理 → 部署"全流程，给所有还在权衡是否切换的厂商一次明确信号。</p>
+    <p>这是 2026 年中国互联网大厂第一次在 AI 算力采购上出现"<strong>三家同步、同一品牌、同一型号</strong>"的局面。与年初阿里独家锁定、腾讯独立路线、字节左右摇摆的格局相比，<strong>"国产卡 = 默认选项"的共识正在被新一代国内大模型反推形成</strong>。对国产算力链客户的 PR 而言，2026 下半年的"国产化故事"将从"政策驱动"切换到"<strong>产品驱动</strong>"——后者更可信、更可持续，但也意味着已经买进过英伟达 H 系列的存量客户需要重新解释"过去三年走过的路是必要的"。</p>
     <div class="sources">
       <strong>延伸阅读：</strong>
-      <a href="https://baike.baidu.com/item/%E6%99%BA%E8%B0%B1GLM-5.1/67544623">百度百科 · 智谱 GLM-5.1</a>
-      <a href="https://blog.csdn.net/2501_94459390/article/details/160890830">CSDN · GLM-5.1 替代方案</a>
-      <a href="https://www.chinaflashmarket.com/newsflash/37194">闪存市场 · 智谱提价 10%</a>
+      <a href="https://36kr.com/p/3777437597586178">36 氪 · DeepSeek 沉默五个月</a>
+      <a href="https://news.qq.com/rain/a/20260427A0596C00">腾讯 · LongCat 与 DeepSeek 万亿模型</a>
+      <a href="https://www.stcn.com/article/detail/3739082.html">证券时报 · 千问与 DeepSeek 升级 Agent</a>
     </div>
   </div>
 
   <div class="deepdive">
-    <div class="kicker">头条 · A 股</div>
-    <h3><a href="https://finance.sina.com.cn/stock/y/2026-05-22/doc-inhytqkv7733513.shtml">A 股周五大反弹：沪指收复 4100 点，CPO + 半导体 + 算力租赁三线拉升</a></h3>
-    <p>5 月 22 日 A 股全市场反弹：上证 <strong>+0.52% 报 4106.26</strong>、深成 <strong>+1.30% 报 15177.29</strong>、创业板 <strong>+1.73% 报 3752.76</strong>、北证 50 <strong>+1.59% 报 1421.21</strong>。全市场成交 <strong>2.58 万亿</strong>，较上日放量 1522 亿。市场结构上呈"<strong>科技反攻、消费跟涨、防御掉队</strong>"——这是 5 月以来第一次出现"高 β 资产领涨"的健康反弹形态。</p>
-    <p>板块结构：CPO、石墨电极、半导体涨幅居前；算力硬件全线拉升，东山精密、长光华芯涨停创历史新高，工业富联触及涨停；光纤概念反复活跃，永鼎股份续创新高；算力租赁概念持续走强，协创数据、宏景科技、杭钢股份均涨停或大涨。影视院线板块跌幅居前，结构性资金从"消费消遣"向"AI 资本开支"持续切换。<a class="inline-src" href="https://finance.sina.com.cn/jjxw/2026-05-21/doc-inhysain5803168.shtml">新浪财经 · 5/21 收评</a></p>
+    <div class="kicker">头条 · 中俄外交</div>
+    <h3><a href="https://www.news.cn/politics/leaders/20260520/d91ba965e861492ea41fbcc0bc9463a4/c.html">中俄元首北京联合声明：《睦邻友好合作条约》继续延期 + "多极世界"叙事正式打包</a></h3>
+    <p>5 月 20 日，习近平主席与普京总统在北京举行会谈，签署《<strong>中俄关于进一步加强全面战略协作、深化睦邻友好合作的联合声明</strong>》，并同日发表《关于构建多极世界和新型国际关系的联合声明》。<strong>《中俄睦邻友好合作条约》继续延期</strong>，覆盖联合国、上合、金砖、APEC 四个多边平台的协调机制被进一步细化。</p>
+    <p>对 PR 端的直接含义：跨国品牌的"中国市场叙事"在本周进入新一轮<strong>地缘话术对齐窗口</strong>。所有涉及"市场" / "地区" / "全球供应链" / "亚太布局"的官网文案、Q2 财报口径、DEI 表述都建议在本周内完成扫描；俄能源、俄航天相关合作伙伴的合作 messaging 也进入有利窗口。同期普京表态由俄方保管伊朗浓缩铀的构想已公开，地缘"紧张-缓和"的双向信号继续共存。<a class="inline-src" href="https://sputniknews.cn/20260522/1071454489.html">卫星社 · 伊朗局势</a></p>
     <div class="sources">
       <strong>延伸阅读：</strong>
-      <a href="https://www.cls.cn/detail/2374260">财联社 · 三大指数复盘</a>
-      <a href="https://finance.sina.com.cn/stock/s/2026-05-22/doc-inhytqks8551600.shtml">新浪 · 股海导航 5/22</a>
-    </div>
-  </div>
-
-  <div class="deepdive">
-    <div class="kicker">头条 · 外交</div>
-    <h3><a href="https://www.mfa.gov.cn/zyxw/202605/t20260520_11914167.shtml">中俄北京峰会落地：42 项合作文件，《睦邻友好合作条约》延期，两份联合声明同时发布</a></h3>
-    <p>5 月 20 日上午，习近平在人民大会堂同来华国事访问的普京举行会谈，两国元首一致同意《<strong>中俄睦邻友好合作条约</strong>》继续延期，签署并发表《<strong>关于进一步加强全面战略协作、深化睦邻友好合作的联合声明</strong>》和《<strong>关于倡导世界多极化和新型国际关系的联合声明</strong>》——同日两份联合声明的密度在中俄历史上不多见。</p>
-    <p>访问期间共签署 <strong>42 项</strong>合作文件，覆盖经贸、能源、基建、教育、科技、人文。21 日佩斯科夫向卫星社确认，俄方欢迎美国特使威特科夫与库什纳再访俄，会谈涉及伊朗议题。<strong>对 PR 端含义</strong>：跨国客户的"地区""市场"表述、官网 DEI 页面、ESG 报告均建议本周完成"中俄叙事一致性"扫描，避免下周一上班后被合规追问。<a class="inline-src" href="https://sputniknews.cn/20260521/1071445425.html">卫星社 · 42 项成果</a></p>
-    <div class="sources">
-      <strong>延伸阅读：</strong>
-      <a href="https://www.chinanews.com.cn/gn/2026/05-20/10625012.shtml">中新网 · 元首会谈</a>
       <a href="https://www.mfa.gov.cn/zyxw/202605/t20260520_11914356.shtml">外交部 · 共同会见记者</a>
-      <a href="https://sputniknews.cn/20260522/1071454489.html">卫星社 · 北京探讨伊朗</a>
+      <a href="https://news.cctv.com/2026/05/20/ARTIDDd7VRUsdoUCT4SXV5EI260520.shtml">央视 · 习近平讲话</a>
+      <a href="https://sputniknews.cn/20260522/1071455002.html">卫星社 · 莫斯科与北京</a>
     </div>
   </div>
 </section>
@@ -480,57 +508,57 @@
     <li class="news-item">
       <div class="num">01</div>
       <div>
-        <div class="news-title"><span class="tag tag-market">A股</span><a href="https://finance.sina.com.cn/stock/y/2026-05-22/doc-inhytqkv7733513.shtml">A 股周五反弹收复 4100 点：上证 +0.52%、深成 +1.30%、创业板 +1.73%</a></div>
-        <div class="news-body">5 月 22 日收盘：上证报 <strong>4106.26</strong>、深成 <strong>15177.29</strong>、创业板 <strong>3752.76</strong>、北证 50 <strong>1421.21</strong>，全市场成交 <strong>2.58 万亿</strong>。前一日（5/21）三大指数集体跌超 2%，今日资金回流科技主线——CPO、半导体、算力租赁全面拉升，超 2900 只个股上涨。<strong>"高 β 反攻"形态是本周第一次出现</strong>，结束了 5 月中旬以来的横盘整理。<a class="inline-src" href="https://www.cls.cn/detail/2374260">财联社</a></div>
+        <div class="news-title"><span class="tag tag-market">A股</span><a href="https://finance.sina.com.cn/tech/roll/2026-05-22/doc-inhytyyn8495998.html">A 股 5/22 午评：调整或告一段落，反弹尚在酝酿，CPO 与算力链全线爆发</a></div>
+        <div class="news-body">沪深双双高开后未跟随权重，资金顺势轮动至算力链：PCB、CPO、铜缆高速连接成为午盘领涨主线，前期领涨的存储 / HBM 板块短期休整。涨停 67 只、跌停 5 只，赚钱效应回归"<strong>结构性</strong>"而非"<strong>普涨</strong>"。<a class="inline-src" href="https://www.stcn.com/article/detail/3870505.html">证券时报</a></div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">02</div>
       <div>
-        <div class="news-title"><span class="tag tag-policy">政策</span><a href="https://www.chinanews.com.cn/gn/2026/05-22/10626234.shtml">国务院常务会议：纵深推进全国统一大市场建设，破除地方保护与隐性壁垒</a></div>
-        <div class="news-body"><strong>重要事件展开：</strong>李强 5 月 21 日主持国务院常务会议，研究推进全国统一大市场建设有关工作，并审议通过《<strong>现代化应急体系建设"十五五"规划</strong>》。文件提"<strong>以更大力度打通卡点堵点，破除各种显性和隐性壁垒</strong>"。这是 2026 年第一次把"统一大市场"和"应急体系"放在同一次国常会上，<strong>组合信号意味着"统一规则"和"统一应急"将进入"十五五"开局重点</strong>。对消费品、跨区域物流、医药器械等需要"全国统一准入"的客户，叙事窗口已经打开。</div>
+        <div class="news-title"><span class="tag tag-market">A股</span><a href="https://www.chinanews.com.cn/cj/2026/05-13/10620428.shtml">创业板 5 月以来累计涨幅领跑：从 5/13 新高到 5/22 算力链接棒，"<strong>双 A 主线</strong>"成形</a></div>
+        <div class="news-body">5 月 13 日创业板指曾创历史新高，随后经历 5/19–5/21 高位震荡，5/22 再度领涨。"<strong>AI 算力 + AI 应用</strong>"双 A 主线已逐步取代上半年的"红利 + AI"双轨叙事，成为 Q2 末段资金最广泛的共识。对成长股客户的 IR 节奏建议：可以开始准备 Q2 业绩预披露口径与下半年指引。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">03</div>
       <div>
-        <div class="news-title"><span class="tag tag-market">美股</span><a href="https://m.jrj.com.cn/madapter/usstock/2026/05/15083257094782.shtml">美股 5/19 三大指数全线收跌：道指 -0.65%、S&amp;P -0.67%、纳指 -0.84%</a></div>
-        <div class="news-body">道指报 <strong>49363.88</strong>、S&amp;P 500 报 <strong>7353.61</strong>、纳指报 <strong>25870.71</strong>。本周前半段大型科技股集体回调，<strong>高通跌超 3%</strong>，亚马逊、谷歌 A/C 跌超 2%，AMD、微软跌超 1%，英伟达跌 0.77%、苹果涨 0.38%。<strong>本周是 5 月以来 S&amp;P 500 第一次失守 7400 点</strong>，结构性资金继续从大型科技股向工业/防御板块切换。<a class="inline-src" href="https://www.chinaflashmarket.com/newsflash/37592">闪存市场 · 存储分化</a></div>
+        <div class="news-title"><span class="tag tag-market">美股</span><a href="https://finance.sina.com.cn/stock/usstock/c/2026-05-14/doc-inhxuwsv7150248.shtml">美股 5/21 收盘：道指创历史新高、纳指与 S&amp;P 500 再创新高，"<strong>中东和平预期 + 油价三连跌</strong>"双驱动</a></div>
+        <div class="news-body">三大指数同步刷新历史，背后两条共振叙事：（a）中东和平预期持续发酵；（b）国际油价连跌 3 个交易日。美债收益率与油价同步走低，对成长股估值构成双重支撑。但 A 股期现联动减弱、走出独立行情，提示<strong>2026 下半年中美定价开始解耦</strong>——多市场上市公司应分别准备两套叙事。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">04</div>
       <div>
-        <div class="news-title"><span class="tag tag-market">财报</span><a href="https://blogs.nvidia.cn/blog/nvidia-announces-financial-results-for-first-quarter-fiscal-2026/">英伟达 Q1 财报：净利润 583 亿美元创历史新高，同比 +200%+，Blackwell 大规模量产</a></div>
-        <div class="news-body"><strong>重要财报展开：</strong>5 月 20 日盘后英伟达披露 FY2026 Q1：净利润 <strong>583 亿美元</strong>（同比 +3 倍），EPS（剔除特殊项）<strong>1.87 美元</strong>，超 1.75 美元预期。<strong>Blackwell AI 超级计算机第一季度销售额已达数十亿美元</strong>，黄仁勋电话会喊出"<strong>世界上将有数十亿个智能体</strong>"。这条数据对 A 股算力硬件板块今日（5/22）反弹构成基本面背书——昨日跌、今日涨的逻辑由"事件驱动"切回"<strong>财报驱动</strong>"。<a class="inline-src" href="https://wallstreetcn.com/articles/3772582">华尔街见闻</a></div>
+        <div class="news-title"><span class="tag tag-policy">政策</span><a href="https://finance.sina.com.cn/stock/y/2026-05-22/doc-inhytqkv7733513.shtml">5/22 四大证券报头版：国新办预告供应链促进博览会 + 江苏"AI 赋能新能源汽车"产业大会</a></div>
+        <div class="news-body">国新办 5/22 举行新闻发布会介绍第四届中国国际供应链促进博览会筹备情况；同日江苏省新能源汽车产业创新发展对接活动暨首届"<strong>AI 赋能新能源汽车产业发展会议</strong>"召开。"<strong>AI + 制造业</strong>"在政策层面从口号进入落地节奏，新能源车产业链的 messaging 可顺势更新。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">05</div>
       <div>
-        <div class="news-title"><span class="tag tag-policy">外贸</span><a href="https://finance.sina.com.cn/stock/y/2026-05-22/doc-inhytqkv7733513.shtml">海关总署发布 20 项措施支持粤港澳大湾区建设，自贸区"硬联通"再加码</a></div>
-        <div class="news-body">海关总署制定《海关支持粤港澳大湾区建设若干措施》，从 5 个方面提出 20 项具体举措。<strong>政策对家电、消费电子、生物医药、保税仓储四类湾区客户最直接</strong>——下半年的 IR/PR 叙事应该围绕"<strong>湾区通关效率提升 X%</strong>""<strong>跨境一体化合规优势</strong>"展开，而不是泛泛的"国际化布局"。</div>
+        <div class="news-title"><span class="tag tag-market">港股</span><a href="https://hea.china.com/articles/20260519/202605191872776.html">港股 AI 医疗主线再发酵：轻松健康 02661 月内累计 +70%，AI 医疗第一梯队估值集体修复</a></div>
+        <div class="news-body">轻松健康（02661.HK）"证元芳"通过 MedClaw 认证 + 新任 CFO 到位双利好同日（5/19）推送，月内涨幅约 +70%。AI 医疗赛道（含 MedClaw 框架内多家企业）估值集体修复。"<strong>临床合规 + 医保规则库</strong>"成为 AI 医疗下半年的新主战场。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">06</div>
       <div>
-        <div class="news-title"><span class="tag tag-market">A股</span><a href="https://finance.sina.com.cn/jjxw/2026-05-22/doc-inhytust7711306.shtml">工业软件 ETF 博时盘中涨超 2%：智谱 GLM-5.1 高速版"事件驱动"明显</a></div>
-        <div class="news-body">国产工业软件 + AI 模型在二级市场的"双向反馈"已经定型——智谱 5 月 22 日早盘高速版 API 发布后，工业软件 ETF 即时拉升超 2%。这是国内 AI 第一次在"<strong>模型发布即 ETF 反应</strong>"的层级被定价。对所有有"工业 + AI"故事线的客户（制造、能源、化工），<strong>Q2 财报和投资者日的 messaging 已经具备"二级市场可定价"</strong>的条件。</div>
+        <div class="news-title"><span class="tag tag-market">业绩</span><a href="https://finance.sina.com.cn/stock/s/2026-05-22/doc-inhytqks8551600.shtml">京东方 A 5/22 风险提示：玻璃基板业务未来 2–3 年对业绩无重大影响</a></div>
+        <div class="news-body"><strong>事件展开：</strong>京东方 A 主动发布风险提示，明确"玻璃基板业务未来 2–3 年内对业绩无重大影响"。这是面板行业对市场过热概念的<strong>主动"降温式"声明</strong>——值得记入 PR 模板。当资本市场把某个未成熟业务过度定价进股价时，公司主动澄清比沉默更利于<strong>长期股价稳定 + 监管关系维护</strong>。建议作为 2026 年第一个"主动降温"样本归档。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">07</div>
       <div>
-        <div class="news-title"><span class="tag tag-market">芯片</span><a href="https://finance.sina.com.cn/stock/t/2026-05-22/doc-inhytusu6174334.shtml">股价逆势暴涨 30%：开始做 AI 芯片的 ARM 赢麻了？</a></div>
-        <div class="news-body">ARM 近期股价大幅拉升，市场预期其 AI 芯片业务进入第一波收入兑现。对国内做"国产替代 + 自研指令集"叙事的厂商（中芯、海光、寒武纪、龙芯），<strong>"ARM 也在做 AI"是 Q2 投资者沟通中必须正面回应的对标题</strong>——可以聚焦"特定场景能效比""国产生态闭环"两条差异化论点。</div>
+        <div class="news-title"><span class="tag tag-market">大宗</span><a href="https://www.chinanews.com.cn/cj/2026/05-13/10620428.shtml">全球 4 月粗钢产量同比 -1.9% 至 1.534 亿吨：钢铁周期延续下行</a></div>
+        <div class="news-body">全球粗钢产量延续下行，与国内"差别电价 + 产能整合"政策叠加，钢铁行业 Q2 业绩面临双重压力。建议钢铁、铸造、装备制造类客户 PR 提前准备"<strong>降本增效 + 产能优化</strong>"叙事，避免与 4 月以来的并购重组叙事撞车。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">08</div>
       <div>
-        <div class="news-title"><span class="tag tag-policy">监管</span><a href="https://finance.sina.com.cn/stock/y/2026-05-22/doc-inhytqkv7733513.shtml">国家发改委：完善公平竞争、投融资促进、科技创新、规范经营四方面政策</a></div>
-        <div class="news-body">国家发改委民营经济发展局局长李慧 5/21 表态。"<strong>规范经营</strong>"是 2026 年新关键词——意味着监管从"鼓励发展"切换到"在规范的前提下发展"。<strong>平台经济、新消费、社区团购、直播带货</strong>四类客户应立即把"合规""可持续""规范"三个词加入官网 / 投资者沟通的标准词库。</div>
+        <div class="news-title"><span class="tag tag-policy">外贸</span><a href="https://finance.sina.com.cn/roll/2026-05-20/doc-inhypaer1731583.shtml">中国对所有非洲建交国实施零关税：外贸结构性新引擎</a></div>
+        <div class="news-body">5 月以来政策推进的"<strong>非洲建交国零关税</strong>"覆盖范围继续扩大，配合中俄睦邻条约延期，构成 Q3 外贸叙事的两个新支点。对出海品牌（尤其是机电、纺织、新能源车）而言，2026 下半年的"<strong>新兴市场叙事</strong>"应优先放在非洲 + 中东 + 中亚三个方向。</div>
       </div>
     </li>
   </ol>
@@ -547,57 +575,57 @@
     <li class="news-item">
       <div class="num">01</div>
       <div>
-        <div class="news-title"><span class="tag tag-ai">国产模型</span><a href="https://finance.sina.com.cn/jjxw/2026-05-22/doc-inhytust7711306.shtml">智谱 GLM-5.1 高速版今日上线：400 tokens/s 刷新全球 API 速度上限</a></div>
-        <div class="news-body">5/22 智谱面向企业客户提供 <strong>GLM-5.1-highspeed</strong>，输出 400 tokens/s。GLM-5.1 在 SWE-Bench Pro 上首次让<strong>国产模型超越 Claude Opus 4.6</strong>，支持 8 小时级持续工作，是唯一达到此级别的开源模型。智谱年内已第三次涨价，<strong>API 价格直接对标 Claude Opus</strong>。<a class="inline-src" href="https://zhuanlan.zhihu.com/p/2021348981796544799">知乎 · GLM-5.1 体验</a></div>
+        <div class="news-title"><span class="tag tag-ai">国产模型</span><a href="https://www.stcn.com/article/detail/3739082.html">DeepSeek-V4 / Qwen3.6-27B / 智谱 CogViT / 文心新模型：5 月是"<strong>中国大模型最密集发布月</strong>"</a></div>
+        <div class="news-body"><strong>关键事件展开：</strong>5 月以来国内主流大模型集中发布——<strong>DeepSeek-V4-Flash</strong>（284B 总参 / 13B 激活 / 1M 上下文）、<strong>Qwen3.6-27B</strong>（稠密多模态，多项核心编程基准超越参数量 15 倍的前代旗舰）、智谱<strong>CogViT</strong>（视觉编程基座）、文心新模型（超稀疏 MoE，0.8T 总参 / 36B 激活，预训练成本仅业界同规模的 6%）。前 5 月已发布 14 个主要大模型，平均<strong>9.1 天一个</strong>。中国大模型周调用量已连续三周超越美国（7.69 万亿 vs. 4.24 万亿 Token，1.81 倍）。<a class="inline-src" href="https://zhuanlan.zhihu.com/p/670574382">大模型矩阵 5/20</a></div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">02</div>
       <div>
-        <div class="news-title"><span class="tag tag-ai">大厂格局</span><a href="https://cloud.tencent.com/developer/article/2668857">国内头部智能体五月大动作：百度 Create2026、字节智助、火山 Agent Plan、阿里千问、腾讯 HY2.0、智谱</a></div>
-        <div class="news-body"><strong>新概念解释：</strong>5 月密集发布的关键词是"<strong>智能体优先</strong>"。<strong>百度</strong>（5/13-14 Create2026）全面转向智能体优先，0.8T 总参数、36B 激活、预训练成本仅业界 6%；<strong>字节</strong>（5/8）发布企业级 AI 办公"字节智助"+ 5/11 火山引擎"全模态智能体套餐包 Agent Plan"；<strong>阿里千问</strong>支持百万 token 上下文、Agent 编程 SWE 突破；<strong>腾讯 HY2.0</strong>（去年 12 月）406B MoE / 256K 上下文继续承担。共性是从"模型参数竞赛"转向"<strong>场景价值交付</strong>"。</div>
+        <div class="news-title"><span class="tag tag-ai">国产卡</span><a href="https://www.eet-china.com/mp/a491180.html">字节 / 腾讯 / 阿里联手抢购华为昇腾 950：国产 AI 芯片"<strong>需求挤兑</strong>"</a></div>
+        <div class="news-body">DeepSeek-V4 落地后，三大互联网巨头近日与华为接洽新增订单，目标昇腾 950。这是国内大厂首次在算力采购上出现"<strong>同步、同品牌、同型号</strong>"——意味着"国产卡 = 默认选项"的共识正在由产品反推形成，而非政策驱动。对国产算力链客户而言，下半年 messaging 应从"政策利好"切到"<strong>产品力被验证</strong>"。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">03</div>
       <div>
-        <div class="news-title"><span class="tag tag-ai">AI 硬件</span><a href="https://blog.google/products-and-platforms/platforms/android/android-xr-io-2026/">Google I/O 2026：Android XR 智能眼镜今秋上市，与三星、Gentle Monster、Warby Parker 合作</a></div>
-        <div class="news-body"><strong>AI 硬件重磅：</strong>Google 5/19-20 在 I/O 上正式开放 Android XR 智能眼镜——分"<strong>音频版</strong>"和"<strong>显示版</strong>"两线。<strong>音频版今秋首发</strong>，合作伙伴包括三星 + 时尚眼镜品牌 Gentle Monster 和 Warby Parker，Gemini 2.5 Pro 驱动实时翻译、导航、消息、视觉理解，"Hey Google"或敲一下镜框即可呼出。这是 2026 年首个"<strong>顶级科技公司 + 顶级眼镜品牌</strong>"的官方合作组合，<strong>AI 眼镜从极客玩具进入主流时尚渠道</strong>。<a class="inline-src" href="https://thenextweb.com/news/google-io-2026-gemini-intelligence-android-xr-glasses">TNW · I/O 2026</a></div>
+        <div class="news-title"><span class="tag tag-ai">海外估值</span><a href="https://wap.eastmoney.com/a/202605133735178725.html">Anthropic 寻求 300 亿美元新融资，投前估值逼近 9000 亿美元；4 月"破万亿"叙事延续</a></div>
+        <div class="news-body">5 月 13 日披露：Anthropic 拟新一轮募资<strong>不低于 300 亿美元</strong>，投前估值 9000 亿+，超越 OpenAI 同期一级估值。叠加马斯克<strong>22 万张 GPU 全数转包给 Claude</strong>的消息，"算力 + 估值 + 客户"三线优势继续扩大。对国内"<strong>选哪家 AI</strong>"还在博弈的 B 端客户而言，Anthropic 与 OpenAI 的差距已经从"参考资料"升级为"<strong>采购优先级</strong>"。<a class="inline-src" href="https://news.qq.com/rain/a/20260509A01WGY00">腾讯 · 马斯克 22 万卡转 Claude</a></div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">04</div>
       <div>
-        <div class="news-title"><span class="tag tag-ai">付费时代</span><a href="https://m.thepaper.cn/newsDetail_forward_33105478">豆包打响发令枪：终结中国大模型"免费时代"？</a></div>
-        <div class="news-body">5/4 豆包推出付费版三档：标准 68 元/月、加强 200 元/月、专业 500 元/月。<strong>对手仍免费</strong>：千问"不考虑收费"，DeepSeek 无付费会员，腾讯元宝免费。同一周智谱年内第三次涨价，阿里云百炼基础套餐取消、AI 算力涨价 34%，腾讯云 5/9 起涨 5%。<strong>消费侧免费、生产侧涨价</strong>是 5 月的"二元定价"新格局——对 SaaS、企业服务客户的 PR 叙事需要把"<strong>价值锚定</strong>"作为重点。<a class="inline-src" href="https://m.thepaper.cn/newsDetail_forward_33123188">澎湃 · 烧钱时间表</a></div>
+        <div class="news-title"><span class="tag tag-ai">Google</span><a href="https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html">Google I/O 2026 发布 Gemini 3.5 Flash + "Omni"世界模型：终端 AI 价格腰斩</a></div>
+        <div class="news-body">5 月 19 日 Google I/O：<strong>Gemini 3.5 Flash</strong> 提供前沿能力，但价格仅同档对手的<strong>一半至三分之一</strong>；新发布<strong>Omni 世界模型</strong>用于模拟物理环境，可在 Flash、Gemini App、Google Flow、YouTube Shorts 中跨场景使用，支持图像与音频。"<strong>世界模型</strong>"概念第一次进入消费级产品矩阵，Robotaxi、机器人、AR/VR、游戏四个行业有新的可对齐主叙事。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">05</div>
       <div>
-        <div class="news-title"><span class="tag tag-ai">Robotaxi</span><a href="https://nev.ofweek.com/2025-12/ART-77015-8400-30677159.html">Robotaxi 2026 春夏窗口：文远 + 吉利 2000 台、小马 + 丰田千台级，萝卜 1700 万次累计</a></div>
-        <div class="news-body"><strong>垂类扩展：</strong>2026 春天 Robotaxi 集体动起来。<strong>文远知行</strong>与吉利远程深化合作，2026 年交付 <strong>2000 台前装量产 Robotaxi</strong>，GXR 单车下线节拍从 1 小时压缩到 10 分钟以内；<strong>小马智行</strong>联手丰田、广汽丰田，目标一线城市部署千台级车队，第七代套件总成本较前代下降 70%（计算单元 -80%、激光雷达 -68%）；<strong>萝卜快跑</strong>已在武汉、北京、上海等多城运营，累计服务用户超 <strong>1700 万次</strong>。中国 Robotaxi 市场 2025-2033 年 CAGR 预计 <strong>74.0%</strong>。</div>
+        <div class="news-title"><span class="tag tag-ai">Robotaxi</span><a href="https://www.qbitai.com/2026/02/382914.html">国内 Robotaxi"三分天下"加速：萝卜快跑全无人订单破 1700 万 + 小马第七代单车营收平衡</a></div>
+        <div class="news-body"><strong>垂类深度展开：</strong>萝卜快跑（百度）六代车量产成本 &lt; 3 万美元，截至 2025 年 10 月每周订单 25 万单（100% 全无人），全球累计 1700 万+；小马智行第七代 Robotaxi 在广州<strong>日均 23 单 / 车、营收 299 元 / 车，已实现单车营收平衡</strong>；文远知行车队 1023 辆，覆盖 8 国 / 10+ 城市。李彦宏定调"<strong>2026 是无人驾驶加速年</strong>"。对汽车、出行、保险三类客户而言，"<strong>L4 已商业化</strong>"已经可以从"展望"切到"<strong>引用案例</strong>"。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">06</div>
       <div>
-        <div class="news-title"><span class="tag tag-ai">海外</span><a href="https://www.bannedbook.org/bnews/worldnews/usa/20260522/2319953.html">英伟达 FY26 Q1：营收 215.9 亿、净利 583 亿、Blackwell 大规模量产、回购 401 亿美元</a></div>
-        <div class="news-body">5/20 财报披露后，全球 AI 硬件叙事重回"<strong>财报驱动</strong>"。Blackwell 量产推动单季度毛利率约 71%，Stock buybacks 401 亿。<strong>"推理即收入"</strong>是黄仁勋本次的关键表述——对所有以"模型 + 算力"为业务核心的 PR 客户，"<strong>训练 vs 推理</strong>"应该作为投资者沟通的第一性问题。<a class="inline-src" href="https://wallstreetcn.com/articles/3766208">华尔街见闻 · 电话会</a></div>
+        <div class="news-title"><span class="tag tag-ai">AI 硬件</span><a href="https://vr.ofweek.com/news/2026-02/ART-81500-8110-30681728.html">AI 眼镜赛道继续扩容：千问首款 AI 眼镜将于 MWC 2026 发布，豆包眼镜与小米第二代蓄势</a></div>
+        <div class="news-body"><strong>AI 硬件深度：</strong>阿里千问宣布将在 MWC 2026 发布<strong>首款千问 AI 眼镜</strong>，字节豆包 AI 眼镜（带显示 + 不带显示版本各一款）首批备货 2–3 万台，小米 AI 眼镜已铺货并迭代至双芯架构。结合 Rokid 全彩升级款、Meta Ray-Ban、华为新款，2026 全年 AI 眼镜出货量预期上调至<strong>3000–5000 万副</strong>区间——这是继智能手机之后第一个有可能跨过"亿"量级的<strong>新一代终端品类</strong>。<a class="inline-src" href="https://www.eet-china.com/news/202504144053.html">EE Times · 豆包眼镜</a></div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">07</div>
       <div>
-        <div class="news-title"><span class="tag tag-ai">医疗 AI</span><a href="http://hy.stock.cnfol.com/hangyejingcui/20260520/32239803.shtml">医疗 AI 头部信号：轻松健康（02661.HK）证元芳通过 MedClaw 信通院评测，国内独一份</a></div>
-        <div class="news-body">中金在线 5/20 报道：轻松健康核心 AI 产品"证元芳"通过中国信通院<strong>医疗健康智能助手（MedClaw）</strong>专项评测，<strong>国内首个且目前唯一</strong>通过该认证。截至 3/31，"证元芳"与"医路轻松"平台完成产品级整合，副主任医师及以上覆盖率 <strong>52%+</strong>。叠加海外 OpenEvidence 估值锚，券商给"增持"评级。这是"医疗 + AI 智能体"赛道里第一个有"<strong>国家级认证 + 强医生侧</strong>"组合的标的。</div>
+        <div class="news-title"><span class="tag tag-ai">GPU</span><a href="https://gitcode.csdn.net/6a0067e20a2f6a37c5a8f00a.html">AMD MI450 GPU 已向核心客户送样，OpenAI 首批 1 GW MI450 下半年部署</a></div>
+        <div class="news-body">AMD Helios AI 机架下半年提升出货，AMD-OpenAI 多吉瓦协议首批 1 GW MI450 预计 2026 H2 启动。叠加 Anthropic 与 Google / Broadcom 的 5 GW TPU、与 SpaceX 的 300 MW 算力协议，全球前 3 大 AI 实验室的算力获取已经全面"<strong>多供应商化</strong>"——英伟达仍是绝对主力，但"<strong>独家供应商</strong>"的地位正在结构性减弱。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">08</div>
       <div>
-        <div class="news-title"><span class="tag tag-ai">OpenAI</span><a href="https://www.shengyayun.com/blog/daily-ai-dev-news-2026-05-12/">OpenAI 5/5 把 GPT-5.5 Instant 设为 ChatGPT 默认模型，5/7 推 Cyber 安全专版</a></div>
-        <div class="news-body">5/5 起 ChatGPT 默认模型切换为 <strong>GPT-5.5 Instant</strong>，并引入"<strong>记忆来源</strong>"（Memory Sources）让用户查看上下文引用；5/7 发布 <strong>GPT-5.5-Cyber</strong>（代号 Spud），向通过审核的网络安全专业人员开放，同日推 <strong>Daybreak 计划</strong>——GPT-5.5-Cyber + Codex Security AI 智能体帮助企业自动发现、验证、修复漏洞。"<strong>安全行业模型</strong>"是 OpenAI 在 Anthropic 万亿叙事下的差异化路径。<a class="inline-src" href="https://fishersama.com/anthropic-timeline">Anthropic 时间线</a></div>
+        <div class="news-title"><span class="tag tag-ai">企业应用</span><a href="https://www.stcn.com/article/detail/3739082.html">阿里千问与 DeepSeek 同步升级 Agent 能力：国内 B 端"<strong>Agent 元年</strong>"启动</a></div>
+        <div class="news-body">阿里千问与 DeepSeek 在 5 月密集升级 Agent 能力，强化工具调用、指令遵循、定时与持续性任务、高吞吐长链路执行四项核心能力。与 4 月 Google 企业 Agent 工具集、默克与 Google Cloud 10 亿美元 Agent 协议形成中外共振。对企业级 SaaS、客服、HR、财务、营销自动化类客户的 PR 而言，2026 下半年的"<strong>AI Agent 案例</strong>"将从"试点 demo"切换到"<strong>可量化 KPI</strong>"——必须配上工时节省、客服 deflection rate、流程缩短等数字。</div>
       </div>
     </li>
   </ol>
@@ -614,50 +642,50 @@
     <li class="news-item">
       <div class="num">01</div>
       <div>
-        <div class="news-title"><a href="https://www.mfa.gov.cn/zyxw/202605/t20260520_11914167.shtml">中俄北京峰会落地：42 项合作文件 + 两份联合声明 + 条约延期</a></div>
-        <div class="news-body">5/20-21 普京第 25 次访华，习近平在人民大会堂会谈，签 <strong>42 项合作文件</strong>。两份联合声明：① 加强全面战略协作 ② 倡导世界多极化和新型国际关系；同日《<strong>中俄睦邻友好合作条约</strong>》延期。<strong>这是 2026 年最大单一外交事件</strong>。</div>
+        <div class="news-title"><a href="https://www.news.cn/politics/leaders/20260520/d91ba965e861492ea41fbcc0bc9463a4/c.html">中俄签署联合声明，《睦邻友好合作条约》同意继续延期</a></div>
+        <div class="news-body">5/20 北京签署的两份联合声明今日仍是国际新闻板块的主线。本周三个外交事件构成对齐窗口——中俄睦邻、伊朗浓缩铀俄方保管构想、特朗普放弃武力夺取格陵兰——跨国品牌"市场叙事"建议本周内完成扫描。<a class="inline-src" href="https://sputniknews.cn/20260522/1071457315.html">卫星社 · 格陵兰</a></div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">02</div>
       <div>
-        <div class="news-title"><a href="https://finance.sina.com.cn/stock/t/2026-05-22/doc-inhytusq8519171.shtml">雷军：媲美保时捷和特斯拉"不是吹嘘"，希望大家有耐心再等小米 5 年，研发投入将 2000 亿</a></div>
-        <div class="news-body"><strong>品牌叙事样本：</strong>5/21 雷军接受澎湃等媒体采访，回应保时捷刷新 SU7 Ultra 量产车圈速纪录——"<strong>过去 10 个月小米对特斯拉 8 败 2 胜</strong>""媲美不是说说""车企你追我赶才更健康"。同时承诺<strong>未来 5 年研发投入不低于 2000 亿</strong>，已累计投入 1055 亿。<strong>"耐心 + 大投入 + 不否认对标"</strong>是 2026 年新一代 CEO 的样板话术。</div>
+        <div class="news-title"><a href="https://finance.sina.cn/tech/2026-05-15/detail-inhxyptk6496000.d.html">钟薛高破产强清拍卖 5/6–7 完成：508 件无形资产 2110 万成交，溢价 900%</a></div>
+        <div class="news-body"><strong>消费 PR 警示：</strong>七年估值蒸发 99.5% 的钟薛高，无形资产拍卖却<strong>溢价 900%</strong>成交。这一反差暴露了一个被低估的事实——<strong>品牌资产在"破产"语境下的清算价值可以远高于经营性现金流</strong>。对快消、新品牌、消费投资三类客户的 PR 而言，"<strong>商标矩阵 + IP 资产</strong>"应该重新进入年度品牌健康度报告。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">03</div>
       <div>
-        <div class="news-title"><a href="https://www.chinanews.com.cn/gn/2026/05-22/10626234.shtml">国务院常务会议：审议通过《现代化应急体系建设"十五五"规划》</a></div>
-        <div class="news-body">5/21 国常会同时研究两件事：全国统一大市场 + 应急体系十五五规划。"<strong>统一规则 + 统一应急</strong>"是组合信号。对所有跨省、跨区域客户（物流、电商、医疗器械、应急装备、新能源充电网络），这是 Q3 战略规划必须提前对齐的政策窗口。</div>
+        <div class="news-title"><a href="https://www.21jingji.com/article/20260513/herald/da01516f4a6837c6ffac1e9c3fabe49e.html">OPPO 母亲节文案翻车 · 后续：高级副总裁段要辉降两级、冻结调薪 36 个月</a></div>
+        <div class="news-body"><strong>危机公关样本（PR 必读）：</strong>5/13 内部问责通告流出——OPPO 中国区高级副总裁段要辉<strong>职级直降两级 + 本年度绩效不高于 C + 冻结调薪 36 个月</strong>；公关部部长马新冻结调薪 12 个月；项目主管同步降级。这是 2026 年第一个"<strong>高管级问责被公开</strong>"的品牌翻车事件，问责力度超过 2024 年同类案例。建议入案"<strong>翻车 → 透明问责 → 内部信公开</strong>"三步危机模板，区别于"道歉 + 删除内容"的旧模板。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">04</div>
       <div>
-        <div class="news-title"><a href="https://sputniknews.cn/20260522/1071455390.html">美国海军：希望台湾地区"尽可能强大"；中国驻美使馆重申坚决反对对台军售</a></div>
-        <div class="news-body">涉台地缘议题继续在国际新闻板块走高。对驻华外资品牌、跨境消费品牌，<strong>"地区""市场"</strong>类用词的 Q2 合规扫描应该在本周完成。同时一周内（5/22 + 4 月案例）多次出现"<strong>美方涉台表态 → 我方外交部回应 → 卫星社转载</strong>"链条，节奏稳定，可作为公关风险预警标准模板。</div>
+        <div class="news-title"><a href="https://finance.sina.cn/stock/jdts/2026-05-15/detail-inhxwvix6605826.d.html">追觅创始人俞浩"疯狂刷屏"事件：个人 IP 与品牌的强绑定边界再讨论</a></div>
+        <div class="news-body">追觅创始人俞浩近期高密度刷屏小红书 + 微博 + 抖音三平台，引发"<strong>创始人 IP vs. 品牌 IP</strong>"边界讨论。对消费、新硬件、新能源车类品牌（雷军模式的复制者）而言，2026 下半年的 PR 思路应同步评估"<strong>创始人个人 IP 的杠杆系数与反噬概率</strong>"，避免重复进入 2024–2025 多个翻车案例的旧路径。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">05</div>
       <div>
-        <div class="news-title"><a href="https://www.yicai.com/news/102825015.html">西贝预制菜危机持续：门店生意同比下滑 50%，计划关闭 102 家门店</a></div>
-        <div class="news-body"><strong>危机公关样本（持续追踪）：</strong>2025/9 预制菜事件后，2026/1 西贝公开计划关 <strong>102 家门店</strong>，门店生意同比下滑 <strong>50%</strong>。<strong>"创始人强硬回应 + 开放厨房自曝 + 煽情视频翻车"</strong>三联失误是 2025-2026 年危机公关最系统的反向教材。对比项：海底捞同期面对食安事件采取"<strong>低调创始人、专业团队统一发声、第一时间认错</strong>"，舆情快速消退。<a class="inline-src" href="https://36kr.com/p/3578422307313795">36kr · 两种打开方式</a></div>
+        <div class="news-title"><a href="https://www.news.cn/">广西发布洪水蓝警 + 湖南抢通受阻国省道路：南方汛期常态化沟通模板</a></div>
+        <div class="news-body">2026 年华南汛期开启较早，应急、物流、保险、农业、零售（生鲜）类客户的"<strong>汛期沟通模板</strong>"建议本周完成更新——重点更新两块：（a）SLA 兜底承诺 + 受影响门店清单的发布节奏；（b）灾后复盘的可量化指标，避免 2024 年某物流品牌"灾后只发感谢信、零量化"被批的旧路径。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">06</div>
       <div>
-        <div class="news-title"><a href="https://sputniknews.cn/20260522/1071458060.html">巴基斯坦前外长：很多国家支持中俄不断靠近</a></div>
-        <div class="news-body">作为中俄峰会的外延评论。第三方背书对中俄联合声明的国际舆论效果有放大作用——对国际化客户的 messaging 建议这周不主动评论中俄议题，"<strong>沉默是最稳的姿势</strong>"。</div>
+        <div class="news-title"><a href="https://www.news.cn/">国内汽柴油价格 5 月调整：油价四连跌后首次回调，物流成本预期改善</a></div>
+        <div class="news-body">国内成品油价格年内首次明显回调，与国际油价三连跌形成共振。对快递、即时配送、网约车、共享单车、家电下乡类客户而言，Q3 messaging 可以包含"<strong>能源成本预期改善 → 服务价格稳态 / 让利</strong>"的双层叙事。</div>
       </div>
     </li>
     <li class="news-item">
       <div class="num">07</div>
       <div>
-        <div class="news-title"><a href="https://m.winshang.com/news740060.html">一周关闭 16 家门店：海底捞、永辉、盒马持续调整</a></div>
-        <div class="news-body">线下零售业本周共关 16 家门店，海底捞、永辉、盒马齐入榜。<strong>"开店减速 + 关店常态化"</strong>是 2026 消费侧主线，对所有 to-C 客户，"<strong>门店数</strong>"已经不是首要 KPI，"<strong>单店人效 / 平效 / 复购率</strong>"成为新核心指标。投资者沟通和品牌叙事需要相应调整。</div>
+        <div class="news-title"><a href="https://sputniknews.cn/20260522/1071458060.html">"俄中火车头"被多国列为新国际秩序的核心：巴基斯坦、约旦官方表态</a></div>
+        <div class="news-body">中俄联合声明发布两日后，巴基斯坦前外长、约旦专家等多国声音公开支持"<strong>俄中两国不断靠近</strong>"。这是 2026 年"<strong>多极化叙事</strong>"第一次出现"<strong>非俄非中第三国家主动背书</strong>"。对一带一路、出海制造、跨境支付类客户的 PR 而言，新一轮可用的话术框架已经形成。</div>
       </div>
     </li>
   </ol>
@@ -673,8 +701,8 @@
   <div class="weibo" style="background:#fbf6ea;border:1px dashed var(--claude);">
     <p class="note" style="color:var(--claude-deep);font-style:normal;font-size:14px;line-height:1.8">
       <strong>⚠ 本模块暂缺真实热搜词数据。</strong><br>
-      沙盒环境无法直连微博实时热搜（<code style="background:#fff;padding:1px 6px;border-radius:2px">s.weibo.com/top/summary</code> 需登录 Cookie、第三方聚合 API 需 key、镜像站被代理拦截）。为避免把"新闻事件"误报为"真实热搜词"，本期仍保留占位。<br><br>
-      今日周边可见话题（来源为新闻聚合，<strong>非</strong>官方热搜榜单，仅作 <em>sanity check</em>）：智谱 GLM-5.1 高速版发布、A 股反弹收复 4100、雷军 5 年 2000 亿研发、中俄北京峰会 42 项成果、Google Android XR 智能眼镜、英伟达 Q1 净利 583 亿、保时捷刷新圈速纪录。完整 TOP10 请临时查阅<a href="https://s.weibo.com/top/summary" style="color:var(--claude-deep);text-decoration:none;border-bottom:1px dotted var(--claude)">新浪官方热搜榜</a>或<a href="https://www.weibotop.cn/2.0/" style="color:var(--claude-deep);text-decoration:none;border-bottom:1px dotted var(--claude)">热搜时光机</a>。
+      沙盒环境无法直连微博实时热搜（<code style="background:#fff;padding:1px 6px;border-radius:2px">s.weibo.com/top/summary</code> 需登录 Cookie、第三方聚合 API 需 key、镜像站被代理拦截）。为避免把"新闻事件"误报为"真实热搜词"，本期继续保留占位。<br><br>
+      今日周边可见话题（来源为新闻聚合，<strong>非</strong>官方热搜榜单，仅作 <em>sanity check</em>）：A 股算力链全线爆发、OPPO 段要辉降两级、追觅俞浩刷屏、中俄联合声明、轻松健康月内 +70%、千问眼镜将亮相 MWC、《乘风 2026》曾沛慈直播探班、钟薛高商标 2110 万拍卖、广西洪水蓝警、京东方风险提示。完整 TOP10 请临时查阅<a href="https://s.weibo.com/top/summary" style="color:var(--claude-deep);text-decoration:none;border-bottom:1px dotted var(--claude)">新浪官方热搜榜</a>或<a href="https://www.weibotop.cn/2.0/" style="color:var(--claude-deep);text-decoration:none;border-bottom:1px dotted var(--claude)">热搜时光机</a>。
     </p>
   </div>
 </section>
@@ -690,18 +718,18 @@
     <div class="label">Three Insights for Today</div>
     <h3>三条可直接写入本周 PR 简报的洞察</h3>
     <ol>
-      <li><strong>国产 AI 已进入"模型发布即 ETF 反应"的事件驱动阶段：</strong>5/22 智谱 GLM-5.1 高速版发布、工业软件 ETF 盘中涨 2%、A 股 CPO/算力硬件全线拉升——这是 2026 年第一次"<strong>一日内国产 AI 主线完整定价</strong>"。对所有客户的 AI 合作方 messaging，模板要从"<strong>我们用的是 X 模型</strong>"升级为"<strong>X 模型推理延迟低于 N ms / 单位 token 成本 N 分 / 吞吐量 N tokens/s</strong>"三件套——这是 GLM-5.1 高速版 400 tokens/s 之后市场期待的新标准格式。</li>
-      <li><strong>"创始人话术"已从硬性辩解切换到"耐心 + 大投入 + 不否认对标"：</strong>雷军 5/21 对保时捷圈速回应是 2026 年最干净的样板——不否认对方刷纪录、肯定良性竞争、给出 5 年 2000 亿的硬数字、要求"用户耐心"。对比项：西贝预制菜危机仍在持续，年内将关闭 102 家门店、门店生意 -50%，本质是"<strong>强硬回应 + 开放厨房自曝 + 煽情视频</strong>"三联失误。<strong>2026 危机公关与品牌叙事的统一模板：硬数据 + 时间表 + 不抢竞争对手的话筒</strong>，把"<strong>5 年再来看</strong>"作为可信度锚点而非画饼词。</li>
-      <li><strong>地缘叙事一致性已是跨国客户的本周必修课：</strong>中俄北京峰会签 42 项文件 + 两份联合声明 + 条约延期，美国海军同日就台湾议题表态、我方使馆回应；广东海关 20 项措施支持湾区。三个信号同周出现，意味着"<strong>地区""市场""伙伴</strong>"三类敏感词的 PR 一致性扫描应在本周完成。对国际化品牌，<strong>"沉默 &gt; 解释 &gt; 表态"</strong>是这周最稳的优先级。对跨境客户，可以借力湾区 20 项措施做正面叙事（"通关效率""跨境合规"），但应规避所有涉俄、涉台、涉伊的直接表态。</li>
+      <li><strong>国产 AI 的"<strong>需求挤兑</strong>"已经形成，叙事窗口要尽早占位：</strong>字节、腾讯、阿里同步抢购华为昇腾 950，叠加 DeepSeek-V4 / Qwen3.6-27B / 智谱 CogViT / 文心新模型在 5 月集中爆发——前 5 月 14 个主要大模型、平均 9.1 天一个、中国周调用量是美国的 1.81 倍——意味着"<strong>国产 AI 故事</strong>"的窗口期短而密集。建议算力链、模型层、应用层客户在 6 月之前完成<strong>一次有量化指标</strong>的对外发布（参数 / 调用量 / 客户名单），错过这波集中曝光后，下一个等效窗口要等到 9 月秋季发布季。</li>
+      <li><strong>"<strong>透明问责</strong>"正在替代"<strong>道歉删稿</strong>"成为危机公关新模板：</strong>OPPO 母亲节翻车的处理方式——中国区高级副总裁<strong>职级直降两级 + 冻结调薪 36 个月</strong>，并把内部通告公开——是 2026 年第一个高管级问责被公开的样本。对照 4 月某些"模板化回应"被批的旧案，新公式呼之欲出："<strong>事故 → 量化问责 → 时间表 → 内部信外溢</strong>"。建议把这四步固化为下季度的危机模板，区别于旧的"道歉 + 删除内容 + 静默观察"三步法。</li>
+      <li><strong>HK2661 进入"<strong>叙事切换期</strong>"，不要回头解释旧议程：</strong>4 月暴跌的话题已经消化完毕，5 月"<strong>MedClaw 认证 + 新任 CFO + 月内 +70%</strong>"三大利好已经形成新的叙事锚。建议本周内主动推送两条<strong>有内容</strong>的对外沟通——一条围绕"<strong>证元芳 = 国内首个且唯一通过 MedClaw 的医疗智能体</strong>"做产品深度稿（医保规则库、副主任以上医师覆盖 52%+），一条围绕"<strong>2025 营收 12.56 亿 / +32.9% / AI 业务盈利拐点</strong>"做 IR 投资者沟通会。<strong>绝对不要主动澄清 4 月暴跌</strong>——任何回头解释都会把已经平息的旧议程再激活一次。</li>
     </ol>
   </div>
 </section>
 
 <!-- ============ FOOTER ============ -->
 <footer>
-  <div class="brand">Gigi's Daily Digest · Generated 2026-05-22 · Vol.025 · 收盘后版</div>
-  <div>共 26 条资讯 · 公司自查 1 家（HK2661 · 估值修复期）· 来源 30+</div>
-  <div class="disclaimer">本简报为多源公开信息整合，不构成投资建议。A 股指数为 2026-05-22 收盘数据；美股指数显示为目前可公开核实的最近一次收盘（2026-05-19）；HK 2661 轻松健康未拿到 5/19-5/22 的逐日权威行情，故仅以"估值修复区间"标注。微博热搜 TOP 10 模块因数据源限制暂以占位形式呈现。</div>
+  <div class="brand">Gigi's Daily Digest · Generated 2026-05-22 · Vol.024 · 午后更新</div>
+  <div>共 27 条资讯 · 公司自查 1 家（HK2661 · 复盘期 · 月内 +70%）· 来源 30+</div>
+  <div class="disclaimer">本简报为多源公开信息整合，不构成投资建议。A 股指数数据为 2026-05-22 午间收盘；美股道指 / 纳指 / 标普 500 数据为 2026-05-21 美东收盘（均创历史新高）。HK 2661 轻松健康未取得逐日权威实时价位，月内累计涨幅 +70% 来自券商研报与港股自媒体口径；港股自媒体"新高"描述时点为 5/19 MedClaw 公告日附近。微博热搜 TOP 10 模块因数据源限制暂以占位形式呈现。</div>
 </footer>
 
 </div>
